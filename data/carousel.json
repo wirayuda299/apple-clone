@@ -1,0 +1,44 @@
+[
+	{
+		"id": "1",
+		"title": "Dokumenter",
+		"subtext": "Masa penuh tanda tanya. Kini hadir di depan mata.",
+		"image": "/prehistoric.jpg"
+	},
+	{
+		"id": "2",
+		"title": "Fiksi ilmiah",
+		"subtext": "Kebenaran akan muncul kepermukaan.",
+		"image": "/silo.jpg"
+	},
+	{
+		"id": "3",
+		"title": "Komedi",
+		"subtext": "Kebaikan hadir kembali.",
+		"image": "/ted-lasso.jpg"
+	},
+	{
+		"id": "4",
+		"title": "Komedi",
+		"subtext": "Upaya kocak dua teman lama (Seth Rogen & Rose Byrne) kembali jalin persahabatan.",
+		"image": "/platonic.jpg"
+	},
+	{
+		"id": "5",
+		"title": "Thirller",
+		"subtext": "Fakta bukanlah keseluruhan dari kisah.",
+		"image": "/crowded.jpg"
+	},
+	{
+		"id": "6",
+		"title": "Drama",
+		"subtext": "Dari produser eksekutif Gossip Girl dan The O.C",
+		"image": "/city-on-fire.jpg"
+	},
+	{
+		"id": "7",
+		"title": "Drama",
+		"subtext": "Empat generasi. Satu takdir.",
+		"image": "/pachinko.jpg"
+	}
+]

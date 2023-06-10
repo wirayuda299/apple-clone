@@ -1,0 +1,47 @@
+[
+	{
+		"id": "1",
+		"name": "Mac",
+		"path": "/mac"
+	},
+	{
+		"id": "2",
+		"name": "iPad",
+		"path": "/ipad"
+	},
+	{
+		"id": "3",
+		"name": "iPhone",
+		"path": "/iphone"
+	},
+	{
+		"id": "4",
+		"name": "Watch",
+		"path": "/watch"
+	},
+	{
+		"id": "5",
+		"name": "Airpods",
+		"path": "/airpods"
+	},
+	{
+		"id": "6",
+		"name": "Tv & Rumah",
+		"path": "/tv-rumah"
+	},
+	{
+		"id": "7",
+		"name": "Hiburan",
+		"path": "/hiburan"
+	},
+	{
+		"id": "8",
+		"name": "Dukungan",
+		"path": "/dukungan"
+	},
+	{
+		"id": "9",
+		"name": "Tempat membeli",
+		"path": "/tempat-membeli"
+	}
+]
