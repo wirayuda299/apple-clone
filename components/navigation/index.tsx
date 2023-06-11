@@ -3,7 +3,7 @@ import navlists from '../../data/navlists.json';
 import { AiOutlineSearch } from 'react-icons/ai';
 import CloseButton from './CloseButton';
 import Navlink from './navLink';
-import { useRecoilState, useRecoilValue } from 'recoil';
+import { useRecoilState } from 'recoil';
 import { navbarState } from '@/store/recoil';
 import { HiOutlineMenuAlt4 } from 'react-icons/hi';
 

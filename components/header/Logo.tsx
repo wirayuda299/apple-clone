@@ -10,7 +10,7 @@ const Logo = () => {
 					src={'/apple.svg'}
 					width={40}
 					height={40}
-					alt='apple'
+					alt='apple logo'
 				/>
 			</Link>
 		</div>

@@ -36,17 +36,17 @@ export default function Promo() {
 											{promo.title}
 										</h2>
 									</div>
-									<p className='text-center text-xl font-semibold'>
+									<p className='text-center text-sm sm:text-lg md:text-xl font-semibold'>
 										{promo.subtext}
 									</p>
 									<Link
 										href={`/${promo.path}`}
 										as={`/${promo.path}`}
 										prefetch={false}
-										className='flex space-x-2 items-center font-semibold capitalize justify-center pt-1 text-blue-500'
+										className='flex space-x-2 items-center text-sm md:text-base text-center font-semibold capitalize justify-center pt-2 text-blue-500'
 									>
 										{promo.textLink}
-										<MdOutlineKeyboardArrowRight size={35} />
+										<MdOutlineKeyboardArrowRight size={30} />
 									</Link>
 								</div>
 							</div>

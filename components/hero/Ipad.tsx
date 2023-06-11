@@ -2,6 +2,7 @@ import Image from 'next/image';
 import ipadnobg from '../../public/ipad-nobg.png';
 import Link from 'next/link';
 import { MdOutlineKeyboardArrowRight } from 'react-icons/md';
+
 export default function Ipad() {
 	return (
 		<section className='w-full h-full'>
@@ -17,7 +18,7 @@ export default function Ipad() {
 							<p className='text-xl md:text-2xl text-center whitespace-nowrap items-center py-1 flex'>
 								Bertenaga super berkat
 								<Image
-									className=' shadow-yellow-600 drop-shadow-md w-8 h-8 aspect-square'
+									className='w-10 h-10 aspect-auto'
 									width={100}
 									height={100}
 									quality={100}
@@ -51,6 +52,7 @@ export default function Ipad() {
 								alt='ipad pro'
 								placeholder='blur'
 								loading='lazy'
+								sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw'
 								blurDataURL={ipadnobg.blurDataURL}
 								fill
 							/>

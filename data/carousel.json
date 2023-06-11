@@ -1,44 +1,58 @@
 [
 	{
 		"id": "1",
-		"title": "Dokumenter",
+		"title": "Prehistoric",
+		"category": "Dokumenter",
 		"subtext": "Masa penuh tanda tanya. Kini hadir di depan mata.",
-		"image": "/prehistoric.jpg"
+		"image_large": "/prehistoric.jpg",
+		"image-small": "/prehistoric_small.jpg"
 	},
 	{
 		"id": "2",
-		"title": "Fiksi ilmiah",
+		"title": "Silo",
+		"category": "Fiksi ilmiah",
 		"subtext": "Kebenaran akan muncul kepermukaan.",
-		"image": "/silo.jpg"
+		"image_large": "/silo.jpg",
+		"image-small": "/silo_small.jpg"
 	},
 	{
 		"id": "3",
-		"title": "Komedi",
+		"title": "Ted Lasso",
+		"category": "Komedi",
 		"subtext": "Kebaikan hadir kembali.",
-		"image": "/ted-lasso.jpg"
+		"image_large": "/ted-lasso.jpg",
+		"image-small": "/ted-lasso_small.jpg"
 	},
 	{
 		"id": "4",
-		"title": "Komedi",
+		"title": "Platonic",
+		"category": "Komedi",
 		"subtext": "Upaya kocak dua teman lama (Seth Rogen & Rose Byrne) kembali jalin persahabatan.",
-		"image": "/platonic.jpg"
+		"image_large": "/platonic.jpg",
+		"image-small": "/platonic_small.jpg"
 	},
 	{
 		"id": "5",
-		"title": "Thirller",
+		"title": "Crowded",
+		"category": "Thirller",
 		"subtext": "Fakta bukanlah keseluruhan dari kisah.",
-		"image": "/crowded.jpg"
+		"image_large": "/crowded.jpg",
+		"image-small": "/crowded_small.jpg"
 	},
 	{
 		"id": "6",
-		"title": "Drama",
+		"category": "Drama",
+		"title": "City on Fire",
 		"subtext": "Dari produser eksekutif Gossip Girl dan The O.C",
-		"image": "/city-on-fire.jpg"
+		"image_large": "/city-on-fire.jpg",
+		"image-small": "/city-on-fire_small.jpg"
 	},
 	{
 		"id": "7",
-		"title": "Drama",
+		"title": "Pachinko",
+		"category": "Drama",
 		"subtext": "Empat generasi. Satu takdir.",
-		"image": "/pachinko.jpg"
+		"image_large": "/pachinko.jpg",
+		"image-small": "/pachinko_small.jpg"
 	}
 ]

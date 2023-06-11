@@ -1,12 +1,9 @@
 'use client';
 import { navbarState } from '@/store/recoil';
-import type { FC } from 'react';
 import { AiOutlineClose } from 'react-icons/ai';
 import { useRecoilState } from 'recoil';
 
-type CloseButtonProps = {};
-
-const CloseButton: FC<CloseButtonProps> = (props) => {
+const CloseButton = () => {
 	const [open, setOpen] = useRecoilState(navbarState);
 
 	return (
