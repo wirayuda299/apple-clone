@@ -1,7 +1,6 @@
 import Image from 'next/image';
-import ipadnobg from '../../public/ipad-nobg.png';
-import Link from 'next/link';
-import { MdOutlineKeyboardArrowRight } from 'react-icons/md';
+import ipad from '@/assets/images/hero/ipad-nobg.png';
+import HeroLinks from '../Links';
 
 export default function Ipad() {
 	return (
@@ -26,34 +25,17 @@ export default function Ipad() {
 									alt='m2'
 								/>
 							</p>
-							<div className='flex  h-full justify-center items-center text-xl md:mt-5 gap-10 md:gap-16'>
-								<Link
-									href={'/selengkapnya'}
-									as={'/selengkapnya'}
-									className='flex space-x-2 items-center text-blue-500'
-								>
-									Selengkapnya
-									<MdOutlineKeyboardArrowRight size={35} />
-								</Link>
-								<Link
-									href={'/beli'}
-									as={'/beli'}
-									className='flex space-x-2 items-center text-blue-500'
-								>
-									Beli
-									<MdOutlineKeyboardArrowRight size={35} />
-								</Link>
-							</div>
+							<HeroLinks />
 						</div>
 						<div className='aspect-square w-[20rem] h-[20rem] relative lg:w-full lg:h-full'>
 							<Image
-								src={ipadnobg}
+								src={ipad}
 								quality={100}
 								alt='ipad pro'
 								placeholder='blur'
 								loading='lazy'
 								sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw'
-								blurDataURL={ipadnobg.blurDataURL}
+								blurDataURL={ipad.blurDataURL}
 								fill
 							/>
 						</div>
