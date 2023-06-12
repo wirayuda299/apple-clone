@@ -4,7 +4,7 @@ import { Metadata } from 'next';
 import Providers from '@/provider';
 
 export const metadata: Metadata = {
-	title: 'Apple',
+	title: 'Apple - apple website clone',
 	description: 'Apple website clone using nextjs',
 };
 
