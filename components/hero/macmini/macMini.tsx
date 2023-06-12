@@ -1,9 +1,14 @@
 import Link from 'next/link';
 import { SlArrowRight } from 'react-icons/sl';
-
+import macMini from '@/assets/images/promo/promo_macmini__fg9smqdnyjmi_large.jpg';
 export default function MacMini() {
 	return (
-		<section className='w-full h-[50rem] mt-4 bg-black bg-[url(/promo_macmini__fg9smqdnyjmi_large.jpg)] bg-center bg-no-repeat'>
+		<section
+			className='w-full h-[50rem] mt-4 bg-black bg-center bg-no-repeat'
+			style={{
+				backgroundImage: `url(${macMini.src})`,
+			}}
+		>
 			<div className='flex justify-center flex-col items-center p-10'>
 				<span className='text-orange-500 font-bold'>Baru</span>
 				<h1 className='text-7xl font-bold capitalize'>MacBook Mini</h1>

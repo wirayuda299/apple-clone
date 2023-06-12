@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import ipad from '@/assets/images/hero/ipad-nobg.png';
+import m2 from '@/assets/images/compares/m2.png';
 import HeroLinks from '../Links';
 
 export default function Ipad() {
@@ -21,7 +22,7 @@ export default function Ipad() {
 									width={100}
 									height={100}
 									quality={100}
-									src='/m2.png'
+									src={m2}
 									alt='m2'
 								/>
 							</p>

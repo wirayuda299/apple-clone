@@ -1,9 +1,14 @@
 import Link from 'next/link';
 import { SlArrowRight } from 'react-icons/sl';
-
+import macbook_pro_large from '@/assets/images/hero/macbook_pro_large.jpg';
 export default function MacBookPro() {
 	return (
-		<section className='w-full h-[50rem] bg-black bg-[url(/macbook_pro_large.jpg)] bg-center bg-no-repeat'>
+		<section
+			className={`w-full h-[50rem] bg-black  bg-center bg-no-repeat`}
+			style={{
+				backgroundImage: `url(${macbook_pro_large.src})`,
+			}}
+		>
 			<div className='flex justify-center flex-col items-center p-10'>
 				<span className='text-orange-500 font-bold'>Baru</span>
 				<h1 className='text-7xl font-bold capitalize'>MacBook Pro</h1>

@@ -84,7 +84,7 @@ export default function Carousel() {
 	];
 
 	return (
-		<div className='w-full h-full transition-all ease duration-500'>
+		<div>
 			<Swiper
 				spaceBetween={50}
 				centeredSlides={true}
@@ -108,7 +108,7 @@ export default function Carousel() {
 								height={1000}
 								fetchPriority='auto'
 								alt={data.title}
-								className='object-cover w-full h-full hidden md:block'
+								className='object-cover w-full object-center hidden md:block'
 							/>
 							<Image
 								src={data.image_small}
