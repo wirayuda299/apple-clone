@@ -17,8 +17,10 @@ export default function RootLayout({
 		<html lang='en'>
 			<body className='bg-black text-white select-none'>
 				<Providers>
-					<Header />
-					{children}
+					<main className='w-full h-full overflow-hidden'>
+						<Header />
+						{children}
+					</main>
 				</Providers>
 			</body>
 		</html>

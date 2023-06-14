@@ -18,7 +18,12 @@ export default function Navigation() {
 					} md:justify-center  items-start lg:gap-10 xl:gap-14 max-w-5xl  text-[#cbd5e1] lg:items-center lg:h-11 fixed lg:static z-50 top-0 w-full h-screen bg-black`}
 				>
 					{navlists.map((list) => (
-						<Navlink name={list.name} path={list.path} key={list.id} />
+						<Navlink
+							handleClick={() => setisOpen(false)}
+							name={list.name}
+							path={list.path}
+							key={list.id}
+						/>
 					))}
 					<CloseButton />
 				</ul>

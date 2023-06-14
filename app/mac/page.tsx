@@ -69,7 +69,7 @@ const data = [
 
 export default function Mac() {
 	return (
-		<div className='pt-10 bg-white w-full h-full'>
+		<div className='pt-10 bg-white w-full h-full overflow-y-auto'>
 			<Macbook_header />
 			<MacBookPro />
 			<MacMini />
@@ -82,7 +82,7 @@ export default function Mac() {
 				</div>
 				<section className='w-full pt-28 h-full'>
 					<div className='w-full h-full flex flex-col justify-center items-center'>
-						<div className='grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 w-full place-items-center p-5'>
+						<div className='grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 w-full overflow-hidden place-items-center p-5'>
 							{data.map((val) => (
 								<div
 									className='flex flex-col min-h-[30rem] max-w-lg h-full relative w-full justify-center items-center'
