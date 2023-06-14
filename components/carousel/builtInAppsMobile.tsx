@@ -1,5 +1,11 @@
 'use client';
 import Image from 'next/image';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/effect-fade';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay, EffectFade } from 'swiper';
 import safariicon from '@/assets/images/apps/safari.jpg';
 import fotoIcon from '@/assets/images/apps/photos.jpg';
 import fotoImages from '@/assets/images/apps/photos-example.jpg';
@@ -15,11 +21,8 @@ import chartImages from '@/assets/images/apps/charImages.jpg';
 import keynoteIcon from '@/assets/images/apps/keynote.jpg';
 import keynoteImages from '@/assets/images/apps/keynoteImage.jpg';
 import macframe from '@/assets/images/mac/mac-frame.jpg';
-import { useCallback, useState } from 'react';
-import Link from 'next/link';
-import { MdOutlineKeyboardArrowRight } from 'react-icons/md';
 
-export default function AppLists() {
+export default function BuiltInAppsMobile() {
 	const applists = [
 		{
 			listId: 1,
@@ -85,64 +88,41 @@ export default function AppLists() {
 			mainImage: keynoteImages,
 		},
 	];
-	const [selectedItem, setselectedItem] = useState<(typeof applists)[0]>(
-		applists[0]
-	);
-
-	const handleClick = useCallback((id: number) => {
-		const founded = applists.find((item) => item.listId === id);
-		if (!founded) return;
-		return setselectedItem(founded);
-	}, []);
-
 	return (
-		<div className=' justify-center flex-col w-full items-center p-5  max-w-3xl text-black hidden md:flex'>
-			<ul className='flex justify-center items-center gap-10'>
-				{applists?.map((app) => (
-					<button
-						name={app.name}
-						title={app.name}
+		<div className='w-full md:hidden flex justify-center'>
+			<Swiper
+				loop={true}
+				effect={'fade'}
+				slidesPerView={1}
+				pagination={{
+					clickable: true,
+				}}
+				modules={[Autoplay, EffectFade]}
+			>
+				{applists.map((app) => (
+					<SwiperSlide
 						key={app.listId}
-						onClick={() => handleClick(app?.listId)}
-						className='flex justify-center items-center flex-col '
+						className='grid place-content-center w-full'
 					>
-						<Image src={app.icon} width={50} height={50} alt={app.name} />
-						<p className='text-[#6e6e73] text-xs md:text-sm font-semibold text-center'>
-							{app.name}
-						</p>
-					</button>
+						<div className='relative flex justify-center mx-auto w-full h-full'>
+							<Image
+								src={macframe}
+								width={510}
+								className='w-80 sm:w-96 h-auto '
+								height={510}
+								alt={'frame'}
+							/>
+							<Image
+								src={app.mainImage}
+								width={800}
+								className='absolute p-3 w-80 sm:w-96 object-fill'
+								height={500}
+								alt={app.name}
+							/>
+						</div>
+					</SwiperSlide>
 				))}
-			</ul>
-			<div className='w-full py-[.1px] my-3 rounded-full bg-black'></div>
-			<div className='flex flex-col items-center my-4 px-5'>
-				<p className='text-center text-sm font-medium'>{selectedItem?.desc}</p>
-				<Link
-					href={selectedItem?.path}
-					className='text-center text-xl text-blue-500 py-5 font-semibold flex items-center space-x-3 '
-				>
-					{selectedItem?.title}
-					<MdOutlineKeyboardArrowRight size={35} />
-				</Link>
-
-				<div className='animate-fadeIn transition-all ease duration-500'>
-					<div className='relative grid place-content-center h-full'>
-						<Image
-							src={macframe}
-							width={510}
-							className='w-80 h-auto md:w-[40rem] '
-							height={510}
-							alt={''}
-						/>
-						<Image
-							src={selectedItem.mainImage}
-							width={500}
-							className='absolute inset-1 p-3 md:w-full object-contain'
-							height={500}
-							alt={selectedItem.name}
-						/>
-					</div>
-				</div>
-			</div>
+			</Swiper>
 		</div>
 	);
 }

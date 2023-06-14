@@ -9,6 +9,7 @@ import continuity from '@/assets/images/mac/continuity__f7o5n4kqigeq_large.jpg';
 import macos from '@/assets/images/mac/macos_ventura__muyk5ifz9wqm_large.jpg';
 import Image from 'next/image';
 import AppLists from '@/components/default_apps';
+import BuiltInAppsMobile from '@/components/carousel/builtInAppsMobile';
 
 const data = [
 	{
@@ -126,6 +127,9 @@ export default function Mac() {
 			</section>
 			<section className='grid place-content-center'>
 				<AppLists />
+			</section>
+			<section>
+				<BuiltInAppsMobile />
 			</section>
 		</div>
 	);

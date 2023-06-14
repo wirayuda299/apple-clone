@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Autoplay } from 'swiper';
+import { Autoplay } from 'swiper';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
@@ -86,29 +86,26 @@ export default function Carousel() {
 	return (
 		<div>
 			<Swiper
-				spaceBetween={50}
-				centeredSlides={true}
 				slidesPerView={1}
+				loop={true}
 				autoplay={{
 					delay: 8000,
-					disableOnInteraction: false,
 				}}
 				pagination={{
 					clickable: true,
 				}}
-				navigation={true}
-				modules={[Autoplay, Navigation]}
+				modules={[Autoplay]}
 			>
 				{data.map((data) => (
 					<SwiperSlide key={data.id}>
-						<div className='relative' key={data.id}>
+						<div className='relative ' key={data.id}>
 							<Image
 								src={data.image_large}
 								width={1000}
 								height={1000}
 								fetchPriority='auto'
 								alt={data.title}
-								className='object-cover w-full object-center hidden md:block'
+								className=' hidden h-[40rem] object-cover min-w-[60rem] w-full md:block'
 							/>
 							<Image
 								src={data.image_small}
@@ -116,7 +113,7 @@ export default function Carousel() {
 								height={500}
 								fetchPriority='auto'
 								alt={data.title}
-								className=' w-full  object-cover object-center block md:hidden'
+								className=' w-full object-cover object-center block md:hidden'
 							/>
 							<div className='absolute md:p-5 md:bottom-0 top-0 h-full left-3 flex flex-col-reverse md:flex-row justify-start items-center md:items-end w-full  gap-10 '>
 								<button
