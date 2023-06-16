@@ -1,0 +1,47 @@
+[
+	{
+		"listId": 1,
+		"name": "Logic Pro",
+		"icon": "/assets/images/apps/pro/logicpro.jpg",
+		"desc": "Logic Pro menempatkan studio rekaman dan produksi MIDI lengkap di Mac Anda, dengan segala hal yang Anda perlukan untuk menulis, merekam, mengedit, dan melakukan mixing dengan cara baru. Dan dengan koleksi plug-in penuh fitur yang lengkap serta ribuan suara dan loop, Anda akan mendapatkan semua yang Anda butuhkan, mulai dari inspirasi awal hingga hasil akhir, apa pun jenis musik yang ingin Anda ciptakan.",
+		"path": "/selengkapnya",
+		"title": "Selengkapnya tentang Logic Pro",
+		"mainImage": "/assets/images/apps/pro/logicpro-images.jpg"
+	},
+	{
+		"listId": 2,
+		"name": "MainStage",
+		"icon": "/assets/images/apps/pro/mainstage.jpg",
+		"desc": "Bawa Mac Anda ke tahapan selanjutnya dengan antarmuka layar penuh yang dioptimalkan untuk pertunjukan live, kendali perangkat keras yang fleksibel, dan beragam koleksi plug-in serta suara yang sepenuhnya kompatibel dengan Logic Pro.",
+		"path": "/selengkapnya",
+		"title": "Selengkapnya tentang MainStage",
+		"mainImage": "/assets/images/apps/pro/mainstage-images.jpg"
+	},
+	{
+		"listId": 3,
+		"name": "Final Cut Pro",
+		"icon": "/assets/images/apps/pro/finalcutpro.jpg",
+		"desc": "Dikembangkan untuk memenuhi kebutuhan editor kreatif masa kini, Final Cut Pro menawarkan pengeditan video yang revolusioner, pengelolaan media yang andal, serta performa mengagumkan yang dioptimalkan untuk komputer Mac dan macOS.",
+		"path": "/selengkapnya",
+		"title": "Selengkapnya tentang Final Cut pro",
+		"mainImage": "/assets/images/apps/pro/finalcutpro-images.jpg"
+	},
+	{
+		"listId": 4,
+		"name": "Motion",
+		"icon": "/assets/images/apps/pro/motion.jpg",
+		"desc": "Motion adalah alat pergerakan grafis andal yang memudahkan pembuatan judul 2D dan 3D sinematik, transisi yang mulus, dan efek realistis secara real time.",
+		"path": "/selengkapnya",
+		"title": "Selengkapnya tentang Motion",
+		"mainImage": "/assets/images/apps/pro/motion-images.jpg"
+	},
+	{
+		"listId": 5,
+		"name": "Compressor",
+		"icon": "/assets/images/apps/pro/compressor.jpg",
+		"desc": "Tambahkan tenaga dan fleksibilitas untuk mengekspor proyek dari Final Cut Pro. Menyesuaikan pengaturan output, bekerja lebih cepat dengan pengkodean terdistribusi, dan dengan mudah mengemas film Anda untuk iTunes Store..",
+		"path": "/selengkapnya",
+		"title": "Selengkapnya tentang Compressor",
+		"mainImage": "/assets/images/apps/pro/compressor-images.jpg"
+	}
+]

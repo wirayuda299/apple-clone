@@ -1,4 +1,4 @@
-import Carousel from '@/components/carousel';
+import MovieCarousel from '@/components/carousel/movies';
 import Heros from '@/components/hero';
 import Promo from '@/components/promo';
 
@@ -7,7 +7,7 @@ export default function Home() {
 		<section className='w-full h-full overflow-y-auto'>
 			<Heros />
 			<Promo />
-			<Carousel />
+			<MovieCarousel />
 		</section>
 	);
 }

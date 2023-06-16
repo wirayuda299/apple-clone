@@ -1,5 +1,4 @@
 'use client';
-
 import Image from 'next/image';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from 'swiper';
@@ -7,82 +6,9 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import { AiFillPlayCircle } from 'react-icons/ai';
-import cityOnFire from '@/assets/images/carousel/images/large/city-on-fire.jpg';
-import cityOnFireSmall from '@/assets/images/carousel/images/small/city-on-fire_small.jpg';
-import silolarge from '@/assets/images/carousel/images/large/silo.jpg';
-import siloSmall from '@/assets/images/carousel/images/small/silo_small.jpg';
-import prehistoricLarge from '@/assets/images/carousel/images/large/prehistoric.jpg';
-import prehistoricSmall from '@/assets/images/carousel/images/small/prehistoric_small.jpg';
-import tedLassoLarge from '@/assets/images/carousel/images/large/ted-lasso.jpg';
-import tedLassoSmall from '@/assets/images/carousel/images/small/ted-lasso_small.jpg';
-import platonic from '@/assets/images/carousel/images/large/platonic.jpg';
-import platonicSmall from '@/assets/images/carousel/images/small/platonic_small.jpg';
-import crowded from '@/assets/images/carousel/images/large/crowded.jpg';
-import crowdedSmall from '@/assets/images/carousel/images/small/crowded_small.jpg';
-import pachinkoSmall from '@/assets/images/carousel/images/small/pachinko_small.jpg';
-import pachinko from '@/assets/images/carousel/images/large/pachinko.jpg';
+import data from '@/data/movieCarousel.json';
 
-export default function Carousel() {
-	const data = [
-		{
-			id: '1',
-			title: 'Prehistoric',
-			category: 'Dokumenter',
-			subtext: 'Masa penuh tanda tanya. Kini hadir di depan mata.',
-			image_large: prehistoricLarge,
-			image_small: prehistoricSmall,
-		},
-		{
-			id: '2',
-			title: 'Silo',
-			category: 'Fiksi ilmiah',
-			subtext: 'Kebenaran akan muncul kepermukaan.',
-			image_large: silolarge,
-			image_small: siloSmall,
-		},
-		{
-			id: '3',
-			title: 'Ted Lasso',
-			category: 'Komedi',
-			subtext: 'Kebaikan hadir kembali.',
-			image_large: tedLassoLarge,
-			image_small: tedLassoSmall,
-		},
-		{
-			id: '4',
-			title: 'Platonic',
-			category: 'Komedi',
-			subtext:
-				'Upaya kocak dua teman lama (Seth Rogen & Rose Byrne) kembali jalin persahabatan.',
-			image_large: platonic,
-			image_small: platonicSmall,
-		},
-		{
-			id: '5',
-			title: 'Crowded',
-			category: 'Thirller',
-			subtext: 'Fakta bukanlah keseluruhan dari kisah.',
-			image_large: crowded,
-			image_small: crowdedSmall,
-		},
-		{
-			id: '6',
-			title: 'City on Fire',
-			category: 'Drama',
-			subtext: 'Dari produser eksekutif Gossip Girl dan The O.C',
-			image_large: cityOnFire,
-			image_small: cityOnFireSmall,
-		},
-		{
-			id: '7',
-			title: 'Pachinko',
-			category: 'Drama',
-			subtext: 'Empat generasi. Satu takdir.',
-			image_large: pachinko,
-			image_small: pachinkoSmall,
-		},
-	];
-
+export default function Movies() {
 	return (
 		<div>
 			<Swiper

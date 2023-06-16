@@ -1,11 +1,10 @@
-import iphone_yellow from '@/assets/images/hero/iphone_yellow.jpg';
 import HeroLinks from '../Links';
 export default function Iphone() {
 	return (
 		<section
-			className={`w-full text-black bg-white  h-[600px] bg-cover md:bg-contain bg-no-repeat bg-center p-5`}
+			className={`w-full text-black bg-white h-[600px] bg-cover md:bg-contain bg-no-repeat bg-center p-5`}
 			style={{
-				backgroundImage: `url(${iphone_yellow.src})`,
+				backgroundImage: `url(/assets/images/hero/iphone_yellow.jpg)`,
 			}}
 		>
 			<div className='w-full flex flex-col justify-center items-center'>

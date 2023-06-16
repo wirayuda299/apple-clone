@@ -1,0 +1,50 @@
+[
+	{
+		"id": "1",
+		"name": "Ipad Pro",
+		"image": "/assets/images/svgs/ipadPro.svg",
+		"path": "/ipad-pro"
+	},
+	{
+		"id": "2",
+		"name": "Ipad Air",
+		"image": "/assets/images/svgs/ipadair.svg",
+		"path": "/ipad-air"
+	},
+	{
+		"id": "3",
+		"name": "iPad",
+		"image": "/assets/images/svgs/ipad.svg",
+		"path": "/ipad"
+	},
+	{
+		"id": "4",
+		"name": "iPad mini",
+		"image": "/assets/images/svgs/ipadmini.svg",
+		"path": "/ipad-mini"
+	},
+	{
+		"id": "5",
+		"name": "iPad Compare",
+		"image": "/assets/images/svgs/ipad-compare.svg",
+		"path": "/ipad-compare"
+	},
+	{
+		"id": "6",
+		"name": "Apple Pencil",
+		"image": "/assets/images/svgs/pencil.jpg",
+		"path": "/mac-pro"
+	},
+	{
+		"id": "7",
+		"name": "Keyboard",
+		"image": "/assets/images/svgs/keyboard.svg",
+		"path": "/keyboard"
+	},
+	{
+		"id": "8",
+		"name": "ipadOs",
+		"image": "/assets/images/svgs/ipados.svg",
+		"path": "/ipad-os"
+	}
+]

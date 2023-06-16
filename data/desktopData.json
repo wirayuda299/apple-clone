@@ -1,0 +1,137 @@
+[
+	{
+		"id": 1,
+		"colors": ["#7d7e80", "#e3e4e5", "#f9d4c2"],
+		"image": "/assets/images/compares/imac24.png",
+		"title": "iMac 24\"",
+		"color": "/assets/images/compares/multi_color.png",
+		"path": "/selengkapnya",
+		"data": [
+			{
+				"display": " 14.5K",
+				"screen": "Layar retina",
+				"ppi": "218ppi",
+				"chip": "Chip Apple M1",
+				"chipImage": "/assets/images/compares/m1.png",
+				"cpu": "CPU",
+				"cpu_size": "8-Core",
+				"gpu": "CPU",
+				"gpu_size": "8-Core",
+				"memoryImage": "/assets/images/compares/memory.png",
+				"memorySize": "Memori terintegrasi hingga 16 GB",
+				"storage": "2 TB",
+				"storageDesc": "Penyimpanan maksimum yang bisa dikonfigurasi",
+				"bateraiImage": "/assets/images/compares/baterai.png",
+				"bateraiDesc": "Kekuatan baterai hingga 18 jam",
+				"faceTimeImage": "/assets/images/compares/camera.png",
+				"faceTimeDesc": "Kamera FaceTime HD 1080p",
+				"facetimeSub": "Dengan prosesor sinyal gambar M1 untuk peningkatan performa yang drastis",
+				"speakerImage": "/assets/images/compares/speaker.png",
+				"speakerDesc": "Deretan tiga mikrofon Speaker stereo",
+				"weight": "1.29kg"
+			}
+		]
+	},
+	{
+		"id": 2,
+		"colors": ["#444b56", "#f0e4d3", "#7d7e80", "#e3e4e5"],
+		"image": "/assets/images/compares/macmini.png",
+		"title": "Mac Mini",
+		"sub": "new",
+		"path": "/selengkapnya",
+		"data": [
+			{
+				"display": "",
+				"screen": "",
+				"ppi": "",
+				"chip": "Chip Apple M2 atau Apple M2 Pro",
+				"chipImage": "/assets/images/compares/m2pro.png",
+				"cpu": "CPU",
+				"cpu_size": "12-Core",
+				"gpu": "CPU",
+				"gpu_size": "19-Core",
+				"memoryImage": "/assets/images/compares/memory.png",
+				"memorySize": "Memori terintegrasi hingga 32 GB",
+				"storage": "8 TB",
+				"storageDesc": "Penyimpanan maksimum yang bisa dikonfigurasi",
+				"bateraiImage": "/assets/images/compares/baterai.png",
+				"bateraiDesc": "Kekuatan baterai hingga 18 jam",
+				"faceTimeImage": "",
+				"faceTimeDesc": "",
+				"facetimeSub": "",
+				"speakerImage": "/assets/images/compares/speaker.png",
+				"speakerDesc": "Deretan tiga mikrofon Sistem suara empat speaker dengan Audio Spasial",
+
+				"weight": "1.24kg"
+			}
+		]
+	},
+	{
+		"id": 3,
+		"colors": ["#444b56", "#f0e4d3"],
+		"image": "/assets/images/compares/macstudio.png",
+		"title": "Mac Studio",
+		"sub": "new",
+		"path": "/selengkapnya",
+		"data": [
+			{
+				"display": "",
+				"screen": "",
+				"ppi": "",
+				"chip": "Chip Apple M1 Max atau Chip Apple M1 Ultra",
+				"chipImage": "/assets/images/compares/m1max_ultra.png",
+				"cpu": "CPU",
+				"cpu_size": "20-Core",
+				"gpu": "CPU",
+				"gpu_size": "64-Core",
+				"memoryImage": "/assets/images/compares/memory.png",
+				"memorySize": "Memori terintegrasi hingga 128 GB",
+				"storage": "8 TB",
+				"storageDesc": "Penyimpanan maksimum yang bisa dikonfigurasi",
+				"bateraiImage": "/assets/images/compares/baterai.png",
+				"bateraiDesc": "Kekuatan baterai hingga 20 jam",
+				"faceTimeImage": "",
+				"faceTimeDesc": "",
+				"facetimeSub": "",
+				"touchId": "/assets/images/compares/imacKeyboard.png",
+				"touchIdDesc": "Dapat dikonfigurasi dengan Magic Keyboard yang dilengkapi Touch ID dan Tombol Numerik",
+				"speakerImage": "/assets/images/compares/speaker.png",
+				"speakerDesc": "Deretan tiga mikrofon Sistem suara empat speaker dengan Audio Spasial",
+				"weight": "1.38kg"
+			}
+		]
+	},
+	{
+		"id": 4,
+		"colors": ["#444b56", "#f0e4d3"],
+		"image": "/assets/images/compares/macpro.png",
+		"title": "Mac Pro",
+		"sub": "new",
+		"path": "/selengkapnya",
+		"data": [
+			{
+				"display": "",
+				"screen": "",
+				"ppi": "",
+				"chip": "Prosesor Intel Xeon W",
+				"chipImage": "/assets/images/compares/intel.png",
+				"cpu": "CPU",
+				"cpu_size": "28-Core",
+				"gpu": "CPU",
+				"gpu_size": "AMD Radeon Pro W6800X Duo",
+				"memoryImage": "/assets/images/compares/memory.png",
+				"memorySize": "Memori terintegrasi hingga 1.5 TB",
+				"storage": "8 TB",
+				"storageDesc": "Penyimpanan maksimum yang bisa dikonfigurasi",
+				"bateraiImage": "/assets/images/compares/baterai.png",
+				"bateraiDesc": "Kekuatan baterai hingga 22 jam",
+				"faceTimeImage": "",
+				"faceTimeDesc": "",
+				"facetimeSub": "",
+				"speakerImage": "/assets/images/compares/speaker.png",
+				"speakerDesc": "Deretan tiga mikrofon berkualitas studio Sistem suara enam speaker dengan Audio Spasial",
+				"weight": "1,6 kg atau 2,15 kg"
+			}
+		]
+	}
+]

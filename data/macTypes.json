@@ -1,0 +1,56 @@
+[
+	{
+		"id": "1",
+		"name": "Macbook Air",
+		"image": "/assets/images/svgs/mac.svg",
+		"path": "/macbook-air"
+	},
+	{
+		"id": "2",
+		"name": "Macbook Pro",
+		"image": "/assets/images/svgs/macbook-pro.svg",
+		"path": "/macbook-pro"
+	},
+	{
+		"id": "3",
+		"name": "iMac 24",
+		"image": "/assets/images/svgs/imac_24.svg",
+		"path": "/imac-24"
+	},
+	{
+		"id": "4",
+		"name": "Mac mini",
+		"image": "/assets/images/svgs/mac_mini.svg",
+		"path": "/mac-mini"
+	},
+	{
+		"id": "5",
+		"name": "Mac Studio",
+		"image": "/assets/images/svgs/mac_studio.svg",
+		"path": "/macbook-studio"
+	},
+	{
+		"id": "6",
+		"name": "Mac Pro",
+		"image": "/assets/images/svgs/mac_pro.svg",
+		"path": "/mac-pro"
+	},
+	{
+		"id": "7",
+		"name": "Compare",
+		"image": "/assets/images/svgs/mac_compare.svg",
+		"path": "/compare"
+	},
+	{
+		"id": "8",
+		"name": "Display",
+		"image": "/assets/images/svgs/displays.svg",
+		"path": "/display"
+	},
+	{
+		"id": "9",
+		"name": "Ventura",
+		"image": "/assets/images/svgs/mac_os.svg",
+		"path": "/mac-os"
+	}
+]

@@ -1,0 +1,130 @@
+[
+	{
+		"id": 1,
+		"colors": ["#7d7e80", "#e3e4e5", "#f9d4c2"],
+		"image": "/assets/images/compares/macbook_air.png",
+		"title": "MacBook Air",
+		"sub": "Chip M1",
+		"path": "/selengkapnya",
+		"data": [
+			{
+				"display": " 13,3\"",
+				"screen": "Layar retina",
+				"chip": "Chip Apple M1",
+				"chipImage": "/assets/images/compares/m1.png",
+				"cpu": "CPU",
+				"cpu_size": "8-Core",
+				"gpu": "CPU",
+				"gpu_size": "7-Core",
+				"memoryImage": "/assets/images/compares/memory.png",
+				"memorySize": "Memori terintegrasi hingga 16 GB",
+				"storage": "2 TB",
+				"storageDesc": "Penyimpanan maksimum yang bisa dikonfigurasi",
+				"bateraiImage": "/assets/images/compares/baterai.png",
+				"bateraiDesc": "Kekuatan baterai hingga 18 jam",
+				"faceTimeImage": "/assets/images/compares/camera.png",
+				"faceTimeDesc": "Kamera FaceTime HD 720p",
+				"speakerImage": "/assets/images/compares/speaker.png",
+				"speakerDesc": "Deretan tiga mikrofon Speaker stereo",
+				"weight": "1.29kg",
+				"touchId": "/assets/images/compares/touchId.png"
+			}
+		]
+	},
+	{
+		"id": 2,
+		"colors": ["#444b56", "#f0e4d3", "#7d7e80", "#e3e4e5"],
+		"image": "/assets/images/compares/macbook_pro.png",
+		"title": "MacBook Air",
+		"sub": "Chip M2",
+		"path": "/selengkapnya",
+		"data": [
+			{
+				"display": " 13,6\"",
+				"screen": "Layar retina",
+				"chip": "Chip Apple M2",
+				"chipImage": "/assets/images/compares/m2.png",
+				"cpu": "CPU",
+				"cpu_size": "8-Core",
+				"gpu": "CPU",
+				"gpu_size": "10-Core",
+				"memoryImage": "/assets/images/compares/memory.png",
+				"memorySize": "Memori terintegrasi hingga 24 GB",
+				"storage": "2 TB",
+				"storageDesc": "Penyimpanan maksimum yang bisa dikonfigurasi",
+				"bateraiImage": "/assets/images/compares/baterai.png",
+				"bateraiDesc": "Kekuatan baterai hingga 18 jam",
+				"faceTimeImage": "/assets/images/compares/camera.png",
+				"faceTimeDesc": "Kamera FaceTime HD 1080p",
+				"speakerImage": "/assets/images/compares/speaker.png",
+				"speakerDesc": "Deretan tiga mikrofon Sistem suara empat speaker dengan Audio Spasial",
+				"weight": "1.24kg",
+				"touchId": "/assets/images/compares/touchId.png"
+			}
+		]
+	},
+	{
+		"id": 3,
+		"colors": ["#444b56", "#f0e4d3"],
+		"image": "/assets/images/compares/m13.png",
+		"title": "MacBook Pro 13\"",
+		"sub": "new",
+		"path": "/selengkapnya",
+		"data": [
+			{
+				"display": " 13,3\"",
+				"screen": "Layar retina",
+				"chip": "Chip Apple M2",
+				"chipImage": "/assets/images/compares/m2.png",
+				"cpu": "CPU",
+				"cpu_size": "8-Core",
+				"gpu": "CPU",
+				"gpu_size": "10-Core",
+				"memoryImage": "/assets/images/compares/memory.png",
+				"memorySize": "Memori terintegrasi hingga 24 GB",
+				"storage": "2 TB",
+				"storageDesc": "Penyimpanan maksimum yang bisa dikonfigurasi",
+				"bateraiImage": "/assets/images/compares/baterai.png",
+				"bateraiDesc": "Kekuatan baterai hingga 20 jam",
+				"faceTimeImage": "/assets/images/compares/camera.png",
+				"faceTimeDesc": "Kamera FaceTime HD 720p",
+				"speakerImage": "/assets/images/compares/speaker.png",
+				"speakerDesc": "Deretan tiga mikrofon Sistem suara empat speaker dengan Audio Spasial",
+				"weight": "1.38kg",
+				"touchId": "/assets/images/compares/touchId_touch_bar.png"
+			}
+		]
+	},
+	{
+		"id": 4,
+		"colors": ["#444b56", "#f0e4d3"],
+		"image": "/assets/images/compares/m14.png",
+		"title": "MacBook Pro 14\" dan 16\"",
+		"sub": "new",
+		"path": "/selengkapnya",
+		"data": [
+			{
+				"display": " 13,3\"",
+				"screen": "Layar Liquid Retina XDR1",
+				"chip": "Chip Apple M2 pro  atau Apple M2 Max",
+				"chipImage": "/assets/images/compares/m2pro.png",
+				"cpu": "CPU",
+				"cpu_size": "12-Core",
+				"gpu": "CPU",
+				"gpu_size": "38-Core",
+				"memoryImage": "/assets/images/compares/memory.png",
+				"memorySize": "Memori terintegrasi hingga 96 GB",
+				"storage": "8 TB",
+				"storageDesc": "Penyimpanan maksimum yang bisa dikonfigurasi",
+				"bateraiImage": "/assets/images/compares/baterai.png",
+				"bateraiDesc": "Kekuatan baterai hingga 22 jam",
+				"faceTimeImage": "/assets/images/compares/camera.png",
+				"faceTimeDesc": "Kamera FaceTime HD 1080p",
+				"speakerImage": "/assets/images/compares/speaker.png",
+				"speakerDesc": "Deretan tiga mikrofon berkualitas studio Sistem suara enam speaker dengan Audio Spasial",
+				"weight": "1,6 kg atau 2,15 kg",
+				"touchId": "/assets/images/compares/touchId.png"
+			}
+		]
+	}
+]

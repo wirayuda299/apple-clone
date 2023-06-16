@@ -1,0 +1,65 @@
+[
+	{
+		"listId": 1,
+		"name": "Safari",
+		"icon": "/assets/images/apps/safari.jpg",
+		"desc": "Safari memiliki fitur inovatif yang membuat berselancar di web menjadi lebih menyenangkan. Dengan lebih banyak cara. Fitur privasi bawaan membantu melindungi informasi dan menjaga Mac Anda tetap aman. Halaman awal yang diperbarui membantu Anda menyimpan, menemukan, dan berbagi situs favorit dengan cepat dan mudah. Dan saran Siri meliputi penanda, tautan dari daftar bacaan Anda, Tab iCloud, tautan yang Anda terima melalui Pesan, dan lainnya.",
+		"path": "/selengkapnya",
+		"title": "Selengkapnya tentang safari",
+		"mainImage": "/assets/images/apps/safari_browser.jpg"
+	},
+	{
+		"listId": 2,
+		"name": "Foto",
+		"icon": "/assets/images/apps/photos.jpg",
+		"desc": "Jadikan perpustakaan Anda yang terus bertambah tetap tertata dan mudah diakses. Sempurnakan gambar Anda dan buat hadiah yang menawan untuk dibagikan. Dan dengan Foto iCloud, Anda bisa menyimpan seluruh koleksi foto dan video di cloud.",
+		"path": "/selengkapnya",
+		"title": "Selengkapnya tentang foto",
+		"mainImage": "/assets/images/apps/photos-example.jpg"
+	},
+	{
+		"listId": 3,
+		"name": "iMovie",
+		"icon": "/assets/images/apps/imovie.jpg",
+		"desc": "Bercerita dengan cara baru. Desain sederhana dan fitur pengeditan yang intuitif memudahkan Anda membuat film 4K yang memukau dan trailer bergaya Hollywood.",
+		"path": "/selengkapnya",
+		"title": "Selengkapnya tentang iMovie",
+		"mainImage": "/assets/images/apps/imovie-images.jpg"
+	},
+	{
+		"listId": 4,
+		"name": "Garage band",
+		"icon": "/assets/images/apps/garageband.jpg",
+		"desc": "Cara termudah membuat lagu bersuara indah di Mac Anda. Dengan antarmuka yang intuitif dan akses ke perpustakaan suara yang lengkap, Anda bisa dengan mudah belajar, bermain, merekam, dan membagikan musik layaknya seorang profesional.",
+		"path": "/selengkapnya",
+		"title": "Selengkapnya tentang GarageBand",
+		"mainImage": "/assets/images/apps/garage-band-images.jpg"
+	},
+	{
+		"listId": 5,
+		"name": "Pages",
+		"icon": "/assets/images/apps/notes.jpg",
+		"desc": "Pengolah kata yang menawan ini memberikan semua yang Anda butuhkan untuk membuat dokumen terlihat indah. Dan terbaca indah. Pages memungkinkan Anda bekerja dengan mulus antar perangkat Mac, iOS, dan iPadOS. Dan bekerja dengan mudah bersama pengguna Microsoft Word.",
+		"path": "/selengkapnya",
+		"title": "Selengkapnya tentang Pages",
+		"mainImage": "/assets/images/apps/pages-images.jpg"
+	},
+	{
+		"listId": 6,
+		"name": "Numbers",
+		"icon": "/assets/images/apps/charts.jpg",
+		"desc": "Buat spreadsheet yang canggih dengan bagan, tabel, dan gambar yang begitu interaktif, yang memudahkan Anda menampilkan data yang mudah dilihat dan dipahami. Bekerja dengan mulus antar perangkat Mac, iOS, dan iPadOS. Dan bekerja dengan mudah bersama pengguna Microsoft Excel.",
+		"path": "/selengkapnya",
+		"title": "Selengkapnya tentang Numbers",
+		"mainImage": "/assets/images/apps/charImages.jpg"
+	},
+	{
+		"listId": 7,
+		"name": "Keynote",
+		"icon": "/assets/images/apps/keynote.jpg",
+		"desc": "Sampaikan ide Anda dengan presentasi yang indah. Gunakan alat yang andal dan efek yang memukau agar peserta tetap memperhatikan presentasi. Bekerja dengan mulus antar perangkat Mac, iOS, dan iPadOS. Dan bekerja dengan mudah bersama pengguna Microsoft PowerPoint.",
+		"path": "/selengkapnya",
+		"title": "Selengkapnya tentang Keynote",
+		"mainImage": "/assets/images/apps/keynoteImage.jpg"
+	}
+]

@@ -1,0 +1,54 @@
+[
+	{
+		"id": 1,
+		"topText": "",
+		"topTextStyle": "",
+		"title": "Mac bisa",
+		"textTitle": "melakukannya",
+		"subTitle": "Temukan apa yang bisa Mac lakukan untuk Anda.",
+		"image": "/assets/images/mac/mdt_family__gkejyxsh4p26_large.jpg",
+		"imageStyle": "relative w-full md:w-[30rem] h-[20rem] aspect-square",
+		"imagealt": "Mac",
+		"path": "/selengkapnya",
+		"pathTitle": "Selengkapnya"
+	},
+	{
+		"id": 2,
+		"topText": "Kontinuitas",
+		"topTextStyle": "text-center text-black text-2xl font-semibold",
+		"title": "Semua perangkat Anda. Satu pengalaman tanpa cela.",
+		"textTitle": "",
+		"subTitle": "Temukan apa yang bisa Mac lakukan untuk Anda.",
+		"image": "/assets/images/mac/continuity__f7o5n4kqigeq_large.jpg",
+		"imageStyle": "relative w-[30rem] h-[20rem] aspect-square",
+		"imagealt": "contiunity",
+		"path": "/selengkapnya",
+		"pathTitle": "Selengkapnya"
+	},
+	{
+		"id": 3,
+		"topText": "macOS Ventura",
+		"topTextStyle": "text-center text-black text-2xl font-semibold",
+		"title": "Bekerja lebih cerdas. Bermain lebih seru. Dan masih banyak lagi.",
+		"textTitle": "",
+		"subTitle": "",
+		"image": "",
+		"imageStyle": "",
+		"imagealt": "",
+		"path": "/selengkapnya",
+		"pathTitle": "Selengkapnya"
+	},
+	{
+		"id": 4,
+		"topText": "",
+		"title": "",
+		"topTextStyle": "",
+		"textTitle": "",
+		"subTitle": "",
+		"image": "/assets/images/mac/macos_ventura__muyk5ifz9wqm_large.jpg",
+		"imageStyle": "relative w-[30rem] h-[20rem] md:w-[40rem] md:h-[30rem] aspect-square",
+		"imagealt": "mac os ventura",
+		"path": "",
+		"pathTitle": ""
+	}
+]

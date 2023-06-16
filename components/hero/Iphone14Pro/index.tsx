@@ -4,7 +4,7 @@ import HeroImage from './image';
 export default function HeroIphone14() {
 	return (
 		<section className='text-black text-center'>
-			<article className='w-full h-[calc(100%-200px)] md:h-[calc(100% - 500px)] mt-14 text-white'>
+			<article className='w-full h-[calc(100%-200px)] md:h-[calc(100% - 500px)] pt-14 text-white'>
 				<div className='w-full grid place-content-center'>
 					<div>
 						<h2 className='font-semibold text-4xl sm:text-5xl md:text-6xl pt-10'>

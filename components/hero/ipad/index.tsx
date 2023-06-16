@@ -1,6 +1,4 @@
 import Image from 'next/image';
-import ipad from '@/assets/images/hero/ipad-nobg.png';
-import m2 from '@/assets/images/compares/m2.png';
 import HeroLinks from '../Links';
 
 export default function Ipad() {
@@ -22,7 +20,7 @@ export default function Ipad() {
 									width={100}
 									height={100}
 									quality={100}
-									src={m2}
+									src={'/assets/images/compares/m2.png'}
 									alt='m2'
 								/>
 							</p>
@@ -30,13 +28,11 @@ export default function Ipad() {
 						</div>
 						<div className='aspect-square w-[20rem] h-[20rem] relative lg:w-full lg:h-full'>
 							<Image
-								src={ipad}
+								src={'/assets/images/hero/ipad-nobg.png'}
 								quality={100}
 								alt='ipad pro'
-								placeholder='blur'
 								loading='lazy'
 								sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw'
-								blurDataURL={ipad.blurDataURL}
 								fill
 							/>
 						</div>
