@@ -1,15 +1,22 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
-export default function ProductTypes({
+type ProductType = {
+	id: string;
+	name: string;
+	image: string;
+	path: string;
+};
+
+export default function ProductTypes<T extends ProductType>({
 	productTypes,
 }: {
-	productTypes: any[];
+	productTypes: T[];
 }) {
 	return (
 		<header className='overflow-hidden'>
-			<div className='max-w-3xl mx-auto grid place-content-center overflow-hidden'>
-				<div className='bg-white flex justify-center gap-5 items-center w-full snap-mandatory overflow-x-auto'>
+			<div className='max-w-3xl mx-auto grid place-content-center overflow-hidden p-2'>
+				<div className='bg-white flex snap-mandatory snap-center gap-5 overflow-x-auto'>
 					{productTypes.map((mac) => (
 						<Link href={mac.path} key={mac.id}>
 							<Image

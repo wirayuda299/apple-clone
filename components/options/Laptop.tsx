@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import data from '@/data/laptopData.json';
-
+type LaptopDataTypes = typeof data;
 const Laptop = () => {
 	return (
 		<div className='container mx-auto h-fit w-full'>

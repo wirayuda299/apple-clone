@@ -3,6 +3,7 @@ import desktopData from '@/data/desktopData.json';
 import Link from 'next/link';
 import { HiOutlineMinusSm } from 'react-icons/hi';
 import { MdOutlineKeyboardArrowRight } from 'react-icons/md';
+
 const Desktop = () => {
 	return (
 		<div className='container mx-auto h-fit w-full'>
