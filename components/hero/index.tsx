@@ -1,6 +1,6 @@
 import HeroIphone14 from './Iphone14Pro';
 import Ipad from './ipad';
-import Iphone from './iphonePro';
+import Iphone from '../Banners/iphonePro';
 
 export default function Heros() {
 	return (

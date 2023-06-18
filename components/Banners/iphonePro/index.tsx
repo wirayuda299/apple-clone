@@ -1,4 +1,4 @@
-import HeroLinks from '../Links';
+import HeroLinks from '../../hero/Links';
 export default function Iphone() {
 	return (
 		<section

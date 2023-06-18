@@ -1,7 +1,12 @@
 import Image from 'next/image';
 import HeroLinks from '../Links';
+import { sanityClient } from '@/config/sanity';
+import { urlFor } from '@/lib/sanity/utils/sanityImage';
 
-export default function Ipad() {
+export default async function IpadHero() {
+	const res = (await sanityClient.fetch(
+		`*[_type == "hero" && page == "ipad"]`
+	)) as ImageRes[];
 	return (
 		<section className='w-full h-full'>
 			<div className='w-full relative h-full'>
@@ -27,14 +32,22 @@ export default function Ipad() {
 							<HeroLinks />
 						</div>
 						<div className='aspect-square w-[20rem] h-[20rem] relative lg:w-full lg:h-full'>
-							<Image
-								src={'/assets/images/hero/ipad-nobg.png'}
-								quality={100}
-								alt='ipad pro'
-								loading='lazy'
-								sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw'
-								fill
-							/>
+							<picture>
+								<source
+									media='(max-width: 734px )'
+									width={489}
+									height={405}
+									srcSet={urlFor(res[0].imageSmall).url()}
+								/>
+								<Image
+									src={urlFor(res[0].imageLarge).url()}
+									quality={100}
+									alt='ipad pro'
+									loading='lazy'
+									sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw'
+									fill
+								/>
+							</picture>
 						</div>
 					</div>
 				</div>

@@ -1,43 +1,26 @@
 import ProductTypes from '@/components/ProductTypes/ProductTypes';
-import HeroLinks from '@/components/hero/Links';
+
 import ipadtypes from '@/data/ipadtypes.json';
 import Image from 'next/image';
 import Link from 'next/link';
+import IpadHero from '@/components/hero/ipad';
+import { Suspense } from 'react';
+import IpadBanners from '@/components/Banners/Ipads';
 
-export default function Ipad() {
+export default function IpadPage() {
 	return (
 		<div className='pt-10 bg-[#f5f5f7] w-full h-full grid place-items-center'>
 			<div className='pt-2 w-full bg-white'>
 				<ProductTypes productTypes={ipadtypes} />
 			</div>
-			<section className='w-full bg-white h-full grid place-content-center place-items-center '>
-				<div className='w-full grid grid-cols-1 max-w-2xl  p-5 relative'>
-					<div className=' order-1 md:order-[0] w-full pt-5 mx-auto'>
-						<Image
-							src='/assets/images/hero/ipadPagehero.jpg'
-							width={500}
-							height={500}
-							priority
-							fetchPriority='high'
-							className='object-contain'
-							alt='ipad'
-						/>
-					</div>
-					<div className='mt-5 w-full mx-auto flex justify-center items-center'>
-						<div className='static md:absolute  top-1/3 w-full px-10 max-w-[250px] right-0 lg:-right-16'>
-							<h1 className='text-5xl font-bold text-center text-black'>
-								iPad
-							</h1>
-							<p className='text-center text-black text-xl font-bold'>
-								Disukai semua. Siap berkarya. Luar biasa.
-							</p>
-							<div className='pt-5'>
-								<HeroLinks />
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
+			<div className='bg-black w-full h-full'>
+				<Suspense>
+					<IpadHero />
+				</Suspense>
+			</div>
+			<Suspense>
+				<IpadBanners />
+			</Suspense>
 			<section className='w-full bg-white grid place-items-center m-5'>
 				<div className='text-black grid grid-cols-1 my-5 lg:grid-cols-2 place-items-center p-5 max-w-6xl justify-between'>
 					<div className='flex flex-col items-center justify-center p-5 max-w-xl'>
