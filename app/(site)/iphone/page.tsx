@@ -236,7 +236,7 @@ export default async function IphonePage() {
 							width={870}
 							height={428}
 							className='object-cover object-center'
-							alt=''
+							alt='why iphone'
 						/>
 					</picture>
 				</div>
@@ -275,7 +275,7 @@ export default async function IphonePage() {
 									width={675}
 									height={357}
 									className='object-contain object-bottom w-full h-full'
-									alt=''
+									alt='why switch into iphone image'
 								/>
 							</picture>
 						</div>
@@ -311,7 +311,7 @@ export default async function IphonePage() {
 									width={675}
 									height={600}
 									className='object-contain object-bottom h-full w-full'
-									alt=''
+									alt='2 peoples bring iphone'
 								/>
 							</picture>
 						</div>
