@@ -7,7 +7,7 @@ export default function HeroLinks() {
 			<Link
 				href={'/selengkapnya'}
 				as={'/selengkapnya'}
-				className='flex text-sm space-x-2 items-center text-blue-500'
+				className='flex text-sm lg:text-base space-x-2 items-center text-blue-500'
 			>
 				Selengkapnya
 				<MdOutlineKeyboardArrowRight size={30} />
@@ -15,7 +15,7 @@ export default function HeroLinks() {
 			<Link
 				href={'/beli'}
 				as={'/beli'}
-				className='flex text-sm space-x-2 items-center text-blue-500'
+				className='flex text-sm lg:text-base space-x-2 items-center text-blue-500'
 			>
 				Beli
 				<MdOutlineKeyboardArrowRight size={30} />

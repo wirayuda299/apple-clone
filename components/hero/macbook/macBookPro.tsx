@@ -3,6 +3,7 @@ import { urlFor } from '@/lib/sanity/utils/sanityImage';
 import Image from 'next/image';
 import Link from 'next/link';
 import { SlArrowRight } from 'react-icons/sl';
+
 export default async function MacBookPro() {
 	const res = (await sanityClient.fetch(
 		`*[_type == "hero" && page == "mac"]`
@@ -19,6 +20,7 @@ export default async function MacBookPro() {
 					src={urlFor(res[0].imageLarge).url()}
 					width={1054}
 					height={500}
+					priority
 					className='object-contain w-full h-full object-bottom'
 					alt='macbook pro'
 				/>

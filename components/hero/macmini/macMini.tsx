@@ -10,9 +10,9 @@ export default function MacMini() {
 		>
 			<div className='flex justify-center flex-col items-center p-10'>
 				<span className='text-orange-500 font-bold'>Baru</span>
-				<h1 className='text-4xl sm:text-5xl md:text-7xl font-bold capitalize'>
+				<h2 className='text-4xl sm:text-5xl md:text-7xl font-bold capitalize'>
 					MacBook Mini
-				</h1>
+				</h2>
 				<p className='font-semibold text-lg md:text-xl'>
 					Lebih bertenaga. Lebih melesat.
 				</p>

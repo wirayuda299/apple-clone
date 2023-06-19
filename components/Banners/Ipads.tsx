@@ -29,7 +29,7 @@ export default async function IpadBanners() {
 				</div>
 				<div className='mt-5 w-full mx-auto flex justify-center items-center'>
 					<div className='static md:absolute  top-1/3 w-full px-10 max-w-[250px] -right-[100px] lg:-right-24'>
-						<h1 className='text-5xl font-bold text-center text-black'>iPad</h1>
+						<h2 className='text-5xl font-bold text-center text-black'>iPad</h2>
 						<p className='text-center text-black text-xl font-bold'>
 							Disukai semua. Siap berkarya. Luar biasa.
 						</p>
