@@ -13,7 +13,7 @@ export default async function IpadBanners() {
 				<div className=' order-1 md:order-[0] w-full pt-5 mx-auto'>
 					<picture>
 						<source
-							media='(max-width:800px )'
+							media='(max-width:800px)'
 							srcSet={urlFor(res[0].imageSmall).url()}
 						/>
 						<Image

@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import type { ReactNode } from 'react';
 import Providers from '@/provider';
 import Header from '@/components/header';
 
@@ -7,17 +8,15 @@ export const metadata: Metadata = {
 	description: 'Apple website clone using nextjs',
 };
 
-export default function MainLayout({
-	children,
-}: {
-	children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: ReactNode }) {
 	return (
 		<section className='bg-black text-white select-none'>
-			<Providers>
-				<Header />
-				<main className='w-full h-full overflow-hidden'>{children}</main>
-			</Providers>
+			<main className='w-full h-full overflow-hidden'>
+				<Providers>
+					<Header />
+					{children}
+				</Providers>
+			</main>
 		</section>
 	);
 }
