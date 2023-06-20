@@ -21,6 +21,7 @@ export default async function MacBookPro() {
 					width={1054}
 					height={500}
 					priority
+					fetchPriority='high'
 					className='object-contain w-full h-full object-bottom'
 					alt='macbook pro'
 				/>
