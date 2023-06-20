@@ -17,7 +17,7 @@ export default function Lists<TLists>({ applists }: AppListsTypesData<TLists>) {
 	}, []);
 
 	return (
-		<div className='mx-auto justify-center flex-col w-full items-center p-5  max-w-3xl text-black hidden md:flex'>
+		<div className='mx-auto overflow-x-hidden justify-center flex-col w-full items-center p-5  max-w-3xl text-black hidden md:flex'>
 			<ul className='flex justify-center items-center gap-10'>
 				{applists?.map((app) => (
 					<button
