@@ -22,13 +22,11 @@ export default async function HeroIphone14() {
 							<HeroLinks />
 						</div>
 					</div>
-					<Suspense>
-						<HeroImage
-							imageLarge={res[0]?.imageLarge}
-							imageSmall={res[0]?.imageSmall}
-							title={res[0]?.title}
-						/>
-					</Suspense>
+					<HeroImage
+						imageLarge={res[0]?.imageLarge}
+						imageSmall={res[0]?.imageSmall}
+						title={res[0]?.title}
+					/>
 				</div>
 			</article>
 		</section>

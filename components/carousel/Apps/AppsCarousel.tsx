@@ -9,9 +9,25 @@ import { Autoplay, EffectFade, Navigation } from 'swiper';
 import Link from 'next/link';
 import { MdOutlineKeyboardArrowRight } from 'react-icons/md';
 
-export default function AppCarouselMobile({ applists }: { applists: any[] }) {
+type Lists = {
+	listId: number;
+	name: string;
+	icon: string;
+	desc: string;
+	path: string;
+	title: string;
+	mainImage: string;
+};
+
+type AppLists<T> = {
+	applists: T[];
+};
+
+export default function AppCarouselMobile<T extends Lists>({
+	applists,
+}: AppLists<T>) {
 	return (
-		<div className='w-full lg:hidden flex justify-center'>
+		<div className='w-full flex justify-center  lg:hidden'>
 			<Swiper
 				loop={true}
 				fadeEffect={{
@@ -45,6 +61,7 @@ export default function AppCarouselMobile({ applists }: { applists: any[] }) {
 								width={800}
 								className='absolute p-3 w-80 sm:w-96 object-fill'
 								height={500}
+								loading='lazy'
 								alt={app.name}
 							/>
 						</div>

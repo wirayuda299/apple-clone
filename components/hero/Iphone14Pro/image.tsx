@@ -22,6 +22,7 @@ export default function HeroImage({
 					.minWidth(734)
 					.minHeight(548)
 					.fit('fill')
+					.quality(60)
 					.url()}
 			/>
 			<Image
@@ -29,8 +30,14 @@ export default function HeroImage({
 				fetchPriority='high'
 				className='object-contain object-bottom'
 				alt={title}
+				quality={65}
 				sizes='(max-width: 810px) 100vw, 80vw'
-				src={urlFor(imageLarge).minWidth(1080).minHeight(553).fit('fill').url()}
+				src={urlFor(imageLarge)
+					.minWidth(1080)
+					.minHeight(553)
+					.auto('format')
+					.fit('fill')
+					.url()}
 				fill
 			/>
 		</picture>

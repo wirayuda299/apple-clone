@@ -2,7 +2,7 @@
 	{
 		"id": "1",
 		"title": "WWDC23",
-		"logo": "/assets/images/svgs/apple.svg",
+		"logo": "/assets/images/logo/apple.svg",
 		"subtext": "Apple world wide Developers Conference.Gabung bersama kami secara online 6-10 juni.",
 		"textLink": "selengkapnya",
 		"path": "/selengkapnya",
@@ -12,11 +12,11 @@
 	{
 		"id": "2",
 		"title": "WATCH",
-		"logo": "/assets/images/svgs/apple.svg",
+		"logo": "/assets/images/logo/apple.svg",
 		"subtext": "Kegembiaraan ada dimana saja.",
 		"textLink": "Beli tali jam sport edisi pelangi baru",
 		"path": "/buy",
-		"image": "/assets/images/promo/promo_pride23__cnpic94fthle_large.jpg",
+		"image": "/assets/images/promo/applewatch.jpg",
 		"style": "absolute top-0 text-black w-full"
 	},
 	{
@@ -26,16 +26,16 @@
 		"subtext": "Disukai semua. Siap berkarya. Luar biasa.",
 		"textLink": "selengkapnya",
 		"path": "/selengkapnya",
-		"image": "/assets/images/promo/promo_ipad__fioegapg12qi_large.jpg",
+		"image": "/assets/images/promo/ipad.jpg",
 		"style": "absolute top-0 text-black w-full"
 	},
 	{
 		"id": "4",
 		"title": "Fitness+",
-		"logo": "/assets/images/svgs/apple.svg",
+		"logo": "/assets/images/logo/apple.svg",
 		"subtext": "Dari HIT hingga yoga,selalu ada untuk pilihan anda.",
 		"textLink": "selengkapnya",
-		"image": "/assets/images/promo/promo-apple-fitness-plus-iphone__bzeal882mv7m_large.jpg",
+		"image": "/assets/images/promo/apple_fitness.jpg",
 		"style": "absolute top-0 text-black w-full"
 	},
 	{
@@ -44,7 +44,7 @@
 		"logo": "",
 		"subtext": "Bertenaga super cepat berkat M2 dan m2 Pro",
 		"textLink": "selengkapnya",
-		"image": "/assets/images/promo/promo_macmini__fg9smqdnyjmi_large.jpg",
+		"image": "/assets/images/promo/macmini.jpg",
 		"style": "absolute top-0 text-white w-full"
 	},
 	{
@@ -53,7 +53,7 @@
 		"logo": "",
 		"subtext": "Dibuat ulang dengan kemampuan baru",
 		"textLink": "selengkapnya",
-		"image": "/assets/images/promo/promo_airpods_pro_avail__gaxggskofx6y_large.jpg",
+		"image": "/assets/images/promo/airpods.jpg",
 		"style": "absolute top-0 text-white w-full"
 	}
 ]

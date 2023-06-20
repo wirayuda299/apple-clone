@@ -26,7 +26,7 @@ export default function Movies() {
 					<SwiperSlide key={data.id}>
 						<picture className='relative ' key={data.id}>
 							<source srcSet={data.image_small} media='(max-width:1024px)' />
-							<img
+							<Image
 								src={data.image_large}
 								alt={data.title}
 								width={980}
@@ -58,7 +58,7 @@ export default function Movies() {
 									<div className='absolute top-0 block md:hidden'>
 										<div className='flex items-center justify-center space-x-2 p-3'>
 											<Image
-												src={'/apple.svg'}
+												src={'/assets/images/logo/apple.svg'}
 												width={50}
 												height={50}
 												className='w-9 h-9'

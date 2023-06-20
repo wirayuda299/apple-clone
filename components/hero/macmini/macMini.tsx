@@ -5,7 +5,7 @@ export default function MacMini() {
 		<section
 			className='w-full h-[50rem] mt-4 bg-black bg-center bg-no-repeat'
 			style={{
-				backgroundImage: `url(/assets/images/promo/promo_macmini__fg9smqdnyjmi_large.jpg)`,
+				backgroundImage: `url(/assets/images/promo/macmini.jpg)`,
 			}}
 		>
 			<div className='flex justify-center flex-col items-center p-10'>

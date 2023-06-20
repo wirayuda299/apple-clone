@@ -1,5 +1,5 @@
 import Title from '../title';
-import AppListsData from './AppListData';
+import Lists from './Lists';
 import applists from '@/data/builtInApps.json';
 
 export default function AppLists() {
@@ -11,7 +11,7 @@ export default function AppLists() {
 				aplikasi yang membantu Anda menjelajah, terhubung, dan bekerja dengan
 				lebih efisien.'
 			/>
-			<AppListsData applists={applists} />
+			<Lists applists={applists} />
 		</div>
 	);
 }

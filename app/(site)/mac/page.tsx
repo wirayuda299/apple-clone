@@ -1,14 +1,10 @@
 import MacBookPro from '@/components/hero/macbook/macBookPro';
 import MacMini from '@/components/hero/macmini/macMini';
-import Options from '@/components/options/Options';
-import AppLists from '@/components/Apps/BuiltInApps/AppLists';
-import AppCarouselMobile from '@/components/Apps/Carousels/AppsCarousel';
+import Compares from '@/components/Compares/Compares';
 import WhatMakesMac from '@/components/WhatMakesMac/WhatMakesMac';
-import Pro from '@/components/Apps/Pro/ProApps';
-import applists from '@/data/builtInApps.json';
-import proApps from '@/data/proApps.json';
 import ProductTypes from '@/components/ProductTypes/ProductTypes';
 import macbookTypes from '@/data/macTypes.json';
+import AppCarousels from '@/components/carousel/Apps';
 
 export default function Mac() {
 	return (
@@ -16,16 +12,9 @@ export default function Mac() {
 			<ProductTypes productTypes={macbookTypes} />
 			<MacBookPro />
 			<MacMini />
-			<Options />
+			<Compares />
 			<WhatMakesMac />
-			<section className='mt-5'>
-				<AppLists />
-				<AppCarouselMobile applists={applists} />
-			</section>
-			<section className='mt-5'>
-				<Pro />
-				<AppCarouselMobile applists={proApps} />
-			</section>
+			<AppCarousels />
 		</div>
 	);
 }

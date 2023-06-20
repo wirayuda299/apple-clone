@@ -3,7 +3,7 @@ import { useState } from 'react';
 import Laptop from './Laptop';
 import Desktop from './Desktop';
 
-const Options = () => {
+const Compares = () => {
 	const [selectedOptions, setSelectedOptions] = useState<string>('laptop');
 	return (
 		<section className='bg-white text-black w-full h-full grid place-content-center'>
@@ -37,4 +37,4 @@ const Options = () => {
 		</section>
 	);
 };
-export default Options;
+export default Compares;

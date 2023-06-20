@@ -7,6 +7,7 @@ export default async function IpadBanners() {
 	const res = (await sanityClient.fetch(
 		`*[_type == "banner" && page == "ipad"]`
 	)) as ImageRes[];
+
 	return (
 		<section className='w-full bg-white h-full grid place-content-center place-items-center '>
 			<div className='w-full grid grid-cols-1 max-w-2xl  p-5 relative'>

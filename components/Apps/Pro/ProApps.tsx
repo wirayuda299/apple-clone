@@ -1,7 +1,9 @@
-import AppLists from '../BuiltInApps/AppListData';
+import AppLists from '../BuiltInApps/Lists';
 import Title from '../title';
-import proApps from '@/data/proApps.json';
-export default function Pro() {
+type AppListsTypesData<TLists> = {
+	proApps: AppListsTypes[] & TLists;
+};
+export default function ProApps<T>({ proApps }: AppListsTypesData<T>) {
 	return (
 		<div className='flex w-full justify-center flex-col items-center'>
 			<Title

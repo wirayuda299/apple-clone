@@ -6,7 +6,7 @@ const Logo = () => {
 			<Link href={'/'}>
 				<Image
 					className='w-5 h-5 object-contain'
-					src={'/assets/images/svgs/apple.svg'}
+					src={'/assets/images/logo/apple.svg'}
 					width={40}
 					height={40}
 					alt='apple logo'

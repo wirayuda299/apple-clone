@@ -4,7 +4,7 @@ import { AiOutlineClose } from 'react-icons/ai';
 import { useRecoilState } from 'recoil';
 
 const CloseButton = () => {
-	const [open, setOpen] = useRecoilState(navbarState);
+	const [, setOpen] = useRecoilState(navbarState);
 
 	return (
 		<button
