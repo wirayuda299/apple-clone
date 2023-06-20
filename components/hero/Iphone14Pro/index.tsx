@@ -10,7 +10,7 @@ export default async function HeroIphone14() {
 	return (
 		<section className='text-black w-full h-[95vh] text-center overflow-hidden'>
 			<article className='w-full h-screen pt-14 text-white'>
-				<div className='w-full grid place-content-center h-full'>
+				<div className='w-full grid place-content-center h-full relative'>
 					<div className='absolute z-10 top-0 w-full md:static'>
 						<h2 className='font-semibold text-4xl sm:text-5xl md:text-6xl pt-10'>
 							{res[0].title}

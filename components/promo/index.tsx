@@ -15,6 +15,7 @@ export default function Promo() {
 								className=' aspect-square object-cover'
 								alt={promo.title}
 								width={800}
+								loading='lazy'
 								height={800}
 							/>
 							<div
@@ -27,9 +28,10 @@ export default function Promo() {
 										{promo.logo && (
 											<Image
 												src={promo.logo}
-												className=' aspect-square object-cover w-4 h-4'
+												className=' object-contain '
 												alt='apple'
 												width={50}
+												loading='lazy'
 												height={50}
 											/>
 										)}

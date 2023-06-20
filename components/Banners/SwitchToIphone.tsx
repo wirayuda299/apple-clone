@@ -19,19 +19,19 @@ export default function SwitchToIphone() {
 						</div>
 						<picture>
 							<source
-								srcSet='/assets/images/apple/switchtoIPhone/switching_to_iphone_small.jpg'
+								srcSet='/assets/images/apple/switchtoIphone/switching_to_iphone_small.jpg'
 								media='(max-width:734px)'
 								width={734}
 								height={247}
 							/>
 							<source
-								srcSet='/assets/images/apple/switchtoIPhone/switching_to_iphone_medium.jpg'
+								srcSet='/assets/images/apple/switchtoIphone/switching_to_iphone_medium.jpg'
 								media='(max-width:1068px)'
 								width={358}
 								height={187}
 							/>
 							<Image
-								src='/assets/images/apple/switchtoIPhone/switching_to_iphone_large.jpg'
+								src='/assets/images/apple/switchtoIphone/switching_to_iphone_large.jpg'
 								width={675}
 								height={357}
 								className='object-contain object-bottom w-full h-full'

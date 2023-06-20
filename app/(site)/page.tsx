@@ -1,5 +1,5 @@
 import MovieCarousel from '@/components/carousel/movies';
-import Heros from '@/components/hero';
+import Heros from '@/components/hero/index';
 import Promo from '@/components/promo';
 
 export default function Home() {

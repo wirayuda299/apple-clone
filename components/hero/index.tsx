@@ -6,13 +6,7 @@ import { Suspense } from 'react';
 export default function Heros() {
 	return (
 		<div className='overflow-hidden'>
-			<Suspense
-				fallback={
-					<h1 className='text-center text-white text-5xl'>
-						Loading hero images
-					</h1>
-				}
-			>
+			<Suspense>
 				<HeroIphone14 />
 			</Suspense>
 			<Iphone />

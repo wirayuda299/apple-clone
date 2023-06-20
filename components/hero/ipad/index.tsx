@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import HeroLinks from '../Links';
 import { sanityClient } from '@/config/sanity';
-import { urlFor } from '@/lib/sanity/utils/sanityImage';
+import HeroImage from './HeroImage';
 
 export default async function IpadHero() {
 	const res = (await sanityClient.fetch(
@@ -19,8 +19,10 @@ export default async function IpadHero() {
 							<h2 className='text-4xl md:text-6xl text-center font-semibold whitespace-nowrap'>
 								iPad Pro
 							</h2>
-							<p className='text-xl md:text-2xl text-center whitespace-nowrap items-center py-1 flex'>
-								Bertenaga super berkat
+							<div className=' items-center py-1 flex gap-2'>
+								<p className='text-xl md:text-2xl text-center whitespace-nowrap'>
+									Bertenaga super berkat
+								</p>
 								<div className='relative'>
 									<div className='bg-gradient-to-br via-[#a42e39] from-[#b49130] blur-[3px] to-[#5c068b] w-12 h-12 rounded'></div>
 									<Image
@@ -32,27 +34,14 @@ export default async function IpadHero() {
 										alt='m2'
 									/>
 								</div>
-							</p>
+							</div>
 							<HeroLinks />
 						</div>
-						<div className='aspect-square w-[20rem] h-[20rem] relative lg:w-full lg:h-full'>
-							<picture>
-								<source
-									media='(max-width: 734px )'
-									width={489}
-									height={405}
-									srcSet={urlFor(res[0].imageSmall).url()}
-								/>
-								<Image
-									src={urlFor(res[0].imageLarge).url()}
-									quality={100}
-									alt='ipad pro'
-									loading='lazy'
-									sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw'
-									fill
-								/>
-							</picture>
-						</div>
+						<HeroImage
+							imageLarge={res[0].imageLarge}
+							imageSmall={res[0].imageSmall}
+							priority={true}
+						/>
 					</div>
 				</div>
 			</div>

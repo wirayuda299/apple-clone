@@ -6,9 +6,7 @@ import Link from 'next/link';
 export default function Watchpage() {
 	return (
 		<div className='w-full h-full bg-[#f5f5f7]'>
-			<Suspense
-				fallback={<h1 className='text-center text-black'>Loading....</h1>}
-			>
+			<Suspense>
 				<AppleWatch />
 			</Suspense>
 			<section>

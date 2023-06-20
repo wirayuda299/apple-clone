@@ -20,13 +20,7 @@ export default function IpadPage() {
 				<ProductTypes productTypes={ipadtypes} />
 			</div>
 			<div className='bg-black w-full h-full'>
-				<Suspense
-					fallback={
-						<h1 className='text-center text-3xl text-black'>
-							Loading hero images
-						</h1>
-					}
-				>
+				<Suspense>
 					<IpadHero />
 				</Suspense>
 			</div>
