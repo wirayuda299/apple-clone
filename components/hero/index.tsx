@@ -9,7 +9,7 @@ export default function Heros() {
 			<Suspense>
 				<HeroIphone14 />
 			</Suspense>
-			<Iphone />
+			<Iphone priority={false} />
 			<Ipad />
 		</div>
 	);

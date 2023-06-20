@@ -11,7 +11,7 @@ import IphoneGuideTour from '@/components/Banners/IphoneGuideTour';
 export default async function IphonePage() {
 	return (
 		<section className='bg-[#f2f2f2] '>
-			<Iphone />
+			<Iphone priority={true} />
 			<section className='bg-black '>
 				<HeroIphone14 />
 			</section>
