@@ -1,5 +1,5 @@
 import MagSafe from '@/components/Banners/MagSafe';
-import Iphone from '@/components/Banners/IphonePro';
+import Iphone from '@/components/Banners/Iphone14';
 import IphoneSe from '@/components/Banners/IphoneSe';
 import HeroIphone14 from '@/components/hero/Iphone14Pro';
 import Airtag from '@/components/Banners/Airtag';

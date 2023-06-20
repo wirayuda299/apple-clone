@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import HeroLinks from '../hero/Links';
-export default function Iphone({ priority }: { priority: boolean }) {
+export default function Iphone14({ priority }: { priority: boolean }) {
 	return (
 		<section className={`w-full text-black bg-[#fafafa] h-[37.5rem] md:p-5`}>
 			<div className='w-full flex flex-col justify-center items-center h-full relative'>
@@ -13,7 +13,7 @@ export default function Iphone({ priority }: { priority: boolean }) {
 				</div>
 				<picture className='w-full h-full'>
 					<source
-						srcSet='/assets/images/hero/iphone_yellow_small.jpg'
+						srcSet='/assets/images/hero/iphone_yellow_small.jpg 1x'
 						media='(max-width:734px)'
 						width={734}
 						height={548}

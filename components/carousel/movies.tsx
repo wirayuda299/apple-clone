@@ -30,6 +30,8 @@ export default function Movies() {
 								src={data.image_large}
 								alt={data.title}
 								width={980}
+								loading='lazy'
+								fetchPriority='low'
 								height={551}
 								className='object-cover w-full'
 							/>
@@ -46,7 +48,7 @@ export default function Movies() {
 										</p>
 										<AiFillPlayCircle className='text-2xl' />
 									</button>
-									<h2 className='font-bold text-2xl  flex-col md:items-center md:gap-2 md:flex-row text-center flex '>
+									<h2 className='font-bold text-2xl max-w-2xl text-center md:text-left flex-col md:items-center md:gap-2 md:flex-row flex '>
 										<p className='text-3xl uppercase md:capitalize md:text-xl lg:text-2xl'>
 											{data.category}
 										</p>
@@ -55,12 +57,13 @@ export default function Movies() {
 											{data.subtext}
 										</span>
 									</h2>
-									<div className='absolute top-0 block md:hidden'>
+									<div className='absolute top-3 block md:hidden'>
 										<div className='flex items-center justify-center space-x-2 p-3'>
 											<Image
 												src={'/assets/images/logo/apple.svg'}
 												width={50}
 												height={50}
+												loading='lazy'
 												className='w-9 h-9'
 												alt={'apple'}
 											/>

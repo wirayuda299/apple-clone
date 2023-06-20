@@ -25,7 +25,6 @@ export default function HeroImage({
 					alt='ipad pro'
 					priority={priority ? true : false}
 					className='aspect-auto'
-					sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw'
 					fill
 				/>
 			</picture>

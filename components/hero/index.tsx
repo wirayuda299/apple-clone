@@ -1,6 +1,6 @@
 import HeroIphone14 from './Iphone14Pro';
 import Ipad from './ipad';
-import Iphone from '../Banners/IphonePro';
+import Iphone from '../Banners/Iphone14';
 import { Suspense } from 'react';
 
 export default function Heros() {

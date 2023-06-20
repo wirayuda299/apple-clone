@@ -9,10 +9,10 @@ export default async function IpadHero() {
 	)) as ImageRes[];
 
 	return (
-		<section className='w-full h-full'>
+		<section className='w-full h-full overflow-hidden'>
 			<div className='w-full relative h-full'>
 				<div className='w-[500px] h-[500px] rounded-full absolute top-0 right-1/2  translate-x-1/2 bg-[#0d022d] blur-3xl'></div>
-				<div className='w-[500px] h-[500px] rounded-full absolute top-0  right-1/4  translate-x-1/2 bg-[#240227] blur-3xl'></div>
+				<div className='w-[500px] h-[500px] rounded-full absolute top-0 right-1/4  translate-x-1/2 bg-[#240227] blur-3xl'></div>
 				<div className='max-w-5xl mx-auto h-[40rem] relative'>
 					<div className='flex flex-col lg:flex-row justify-evenly lg:justify-between gap-10 items-center w-full h-full relative'>
 						<div className='p-5'>
@@ -30,6 +30,7 @@ export default async function IpadHero() {
 										width={100}
 										height={100}
 										quality={100}
+										loading='lazy'
 										src={'/assets/images/compares/m2.png'}
 										alt='m2'
 									/>
