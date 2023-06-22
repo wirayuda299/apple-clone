@@ -1,5 +1,6 @@
 import AppLists from '../BuiltInApps/Lists';
 import Title from '../title';
+
 type AppListsTypesData<TLists> = {
 	proApps: AppListsTypes[] & TLists;
 };

@@ -7,7 +7,7 @@ import { SlArrowRight } from 'react-icons/sl';
 export default async function MacBookPro() {
 	const res = (await sanityClient.fetch(
 		`*[_type == "hero" && page == "mac"]`
-	)) as ImageRes[];
+	)) as Readonly<HeroImageRes[]>;
 
 	return (
 		<section className={`w-full h-[40rem] overflow-hidden bg-black relative`}>

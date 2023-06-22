@@ -1,12 +1,17 @@
-type ImageRes = {
-	page: string;
+type Base = {
 	_updatedAt: string;
 	_createdAt: string;
 	_rev: string;
 	_id: string;
-	imageLarge: string;
 	title: string;
 	subTitle: string;
-	_type: string;
-	imageSmall: string;
+	_type: 'document';
 };
+
+type HeroImageRes = {
+	page: string;
+	imageLarge: string;
+	imageSmall: string;
+	imageMedium: string;
+	path: string;
+} & Base;

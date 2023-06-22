@@ -1,10 +1,9 @@
 import { urlFor } from '@/lib/sanity/utils/sanityImage';
 import Image from 'next/image';
-
 type HeroImageProps = {
-	imageSmall: string;
-	title: string;
-	imageLarge: string;
+	imageSmall: Readonly<string>;
+	title: Readonly<string>;
+	imageLarge: Readonly<string>;
 };
 
 export default function HeroImage({
@@ -12,8 +11,10 @@ export default function HeroImage({
 	imageSmall,
 	title,
 }: HeroImageProps) {
+	console.log({ imageLarge, imageSmall, title });
+
 	return (
-		<picture className=' w-[50rem] h-[35rem] max-w-[70rem] md:w-[45rem] md:h-[24rem] !bottom-0 relative '>
+		<picture className=' w-[50rem] h-[35rem] max-w-[70rem] md:w-[45rem] md:h-[24rem] lg:w-[58rem] !bottom-0 relative '>
 			<source
 				media='(max-width:767px)'
 				width={734}
@@ -28,15 +29,13 @@ export default function HeroImage({
 			<Image
 				priority
 				fetchPriority='high'
-				className='object-contain object-bottom'
+				className='object-cover object-bottom w-full h-full'
 				alt={title}
 				quality={65}
-				sizes='(max-width: 810px) 100vw, 80vw'
 				src={urlFor(imageLarge)
 					.minWidth(1080)
 					.minHeight(553)
 					.auto('format')
-					.fit('fill')
 					.url()}
 				fill
 			/>

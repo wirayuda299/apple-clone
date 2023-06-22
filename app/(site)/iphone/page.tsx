@@ -1,5 +1,5 @@
 import MagSafe from '@/components/Banners/MagSafe';
-import Iphone from '@/components/Banners/Iphone14';
+import Iphone14 from '@/components/Banners/Iphone14';
 import IphoneSe from '@/components/Banners/IphoneSe';
 import HeroIphone14 from '@/components/hero/Iphone14Pro';
 import Airtag from '@/components/Banners/Airtag';
@@ -11,7 +11,7 @@ import IphoneGuideTour from '@/components/Banners/IphoneGuideTour';
 export default async function IphonePage() {
 	return (
 		<section className='bg-[#f2f2f2] '>
-			<Iphone priority={true} />
+			<Iphone14 priority={true} />
 			<section className='bg-black '>
 				<HeroIphone14 />
 			</section>

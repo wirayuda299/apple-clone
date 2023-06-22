@@ -1,5 +1,6 @@
 import { urlFor } from '@/lib/sanity/utils/sanityImage';
 import Image from 'next/image';
+
 type HeroImageProps = {
 	imageSmall: string;
 	imageLarge: string;
@@ -11,10 +12,10 @@ export default function HeroImage({
 	priority,
 }: HeroImageProps) {
 	return (
-		<div className='aspect-square w-[20rem] h-[20rem] relative lg:w-full lg:h-full'>
+		<div className=' w-[20rem] h-[20rem] relative lg:w-full lg:h-full aspect-auto'>
 			<picture>
 				<source
-					media='(max-width: 734px )'
+					media='(max-width: 734px)'
 					width={489}
 					height={405}
 					srcSet={urlFor(imageSmall).url()}
@@ -24,7 +25,7 @@ export default function HeroImage({
 					quality={100}
 					alt='ipad pro'
 					priority={priority ? true : false}
-					className='aspect-auto'
+					className='aspect-auto object-cover w-full h-full'
 					fill
 				/>
 			</picture>

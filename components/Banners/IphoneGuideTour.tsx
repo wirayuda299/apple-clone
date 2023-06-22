@@ -28,17 +28,25 @@ export default async function IphoneGuideTour() {
 			</div>
 			<picture>
 				<source
-					media='(max-width: 768px)'
-					srcSet={urlFor(res[0].imageSmall).url()}
+					media='(max-width: 734px)'
+					srcSet={urlFor(res[0].imageSmall.source).url()}
+					width={res[0].imageSmall.width}
+					height={res[0].imageSmall.height}
+				/>
+				<source
+					media='(max-width: 1068px)'
+					srcSet={urlFor(res[0].imageMedium.source).url()}
+					width={res[0].imageMedium.width}
+					height={res[0].imageMedium.height}
 				/>
 				<Image
-					src={urlFor(res[0].imageLarge).url()}
-					width={1068}
-					height={500}
+					src={urlFor(res[0].imageLarge.source).url()}
+					width={res[0].imageLarge.width}
+					height={res[0].imageLarge.height}
 					className='object-cover w-full md:rounded-3xl mx-auto'
 					fetchPriority='auto'
 					sizes='(max-width:734px) 80vw, 100vw '
-					alt='guide tour of iphone 14 and 14 pro'
+					alt={res[0].title}
 				/>
 			</picture>
 		</section>

@@ -1,5 +1,4 @@
 import ProductTypes from '@/components/ProductTypes/ProductTypes';
-
 import ipadtypes from '@/data/ipadtypes.json';
 import Image from 'next/image';
 import Link from 'next/link';

@@ -14,17 +14,25 @@ export default async function IpadBanners() {
 				<div className=' order-1 md:order-[0] w-full pt-5 mx-auto'>
 					<picture>
 						<source
-							media='(max-width:800px)'
-							srcSet={urlFor(res[0].imageSmall).url()}
+							media='(max-width:734px)'
+							srcSet={urlFor(res[0].imageSmall.source).url()}
+							width={res[0].imageSmall.width}
+							height={res[0].imageSmall.height}
+						/>
+						<source
+							media='(max-width:1068px)'
+							srcSet={urlFor(res[0].imageMedium.source).url()}
+							width={res[0].imageMedium.width}
+							height={res[0].imageMedium.height}
 						/>
 						<Image
-							src={urlFor(res[0].imageLarge).url()}
-							width={447}
-							height={535}
+							src={urlFor(res[0].imageLarge.source).url()}
+							width={res[0].imageLarge.width}
+							height={res[0].imageLarge.height}
 							priority
 							fetchPriority='high'
 							className='object-contain'
-							alt='iPad in blue, pink, yellow, and silver colors and one iPad attached to the Magic Keyboard Folio.'
+							alt={res[0].title}
 						/>
 					</picture>
 				</div>

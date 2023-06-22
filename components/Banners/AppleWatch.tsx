@@ -38,21 +38,28 @@ export default async function AppleWatch() {
 					</div>
 					<picture className='w-full h-full'>
 						<source
-							srcSet={urlFor(res[0].imageSmall).quality(60).url()}
-							width={734}
-							height={482}
-							media='(max-width: 768px)'
+							srcSet={urlFor(res[0].imageSmall.source).quality(60).url()}
+							width={res[0].imageSmall.width}
+							height={res[0].imageSmall.height}
+							media='(max-width: 734px)'
+							className='object-contain object-bottom w-full h-full'
+						/>
+						<source
+							srcSet={urlFor(res[0].imageMedium.source).quality(60).url()}
+							width={res[0].imageMedium.width}
+							height={res[0].imageMedium.height}
+							media='(max-width: 734px)'
 							className='object-contain object-bottom w-full h-full'
 						/>
 						<Image
-							alt='apple watch'
-							src={urlFor(res[0].imageLarge)
+							alt={res[0].title}
+							src={urlFor(res[0].imageLarge.source)
 								.auto('format')
 								.crop('center')
 								.quality(70)
 								.url()}
-							width={3008}
-							height={1005}
+							width={res[0].imageLarge.width}
+							height={res[0].imageLarge.height}
 							fetchPriority='high'
 							priority
 							sizes='(min-width:1028px) 100vw, 80vw'

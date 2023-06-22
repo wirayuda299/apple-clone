@@ -16,16 +16,78 @@ export default {
 		{
 			name: 'imageLarge',
 			title: 'ImageLarge',
-			type: 'image',
+			type: 'document',
+			fields: [
+				{
+					name: 'source',
+					title: 'Source',
+					type: 'image',
+				},
+				{
+					name: 'width',
+					title: 'Width',
+					type: 'number',
+				},
+				{
+					name: 'height',
+					title: 'Height',
+					type: 'number',
+				},
+			],
 		},
+		{
+			name: 'imageMedium',
+			title: 'ImageMedium',
+			type: 'document',
+			fields: [
+				{
+					name: 'source',
+					title: 'Source',
+					type: 'image',
+				},
+				{
+					name: 'width',
+					title: 'Width',
+					type: 'number',
+				},
+				{
+					name: 'height',
+					title: 'Height',
+					type: 'number',
+				},
+			],
+		},
+
 		{
 			name: 'imageSmall',
 			title: 'ImageSmall',
-			type: 'image',
+			type: 'document',
+			fields: [
+				{
+					name: 'source',
+					title: 'Source',
+					type: 'image',
+				},
+				{
+					name: 'width',
+					title: 'Width',
+					type: 'number',
+				},
+				{
+					name: 'height',
+					title: 'Height',
+					type: 'number',
+				},
+			],
 		},
 		{
 			name: 'page',
 			title: 'Page',
+			type: 'string',
+		},
+		{
+			name: 'path',
+			title: 'path',
 			type: 'string',
 		},
 	],
