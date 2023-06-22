@@ -1,7 +1,7 @@
 'use client';
 import navlists from '../../data/navlists.json';
 import { AiOutlineClose, AiOutlineSearch } from 'react-icons/ai';
-import Navlinks from './NavLink';
+import Navlinks from './NavLinks';
 import { useRecoilState } from 'recoil';
 import { navbarState } from '@/store/recoil';
 import { HiOutlineMenuAlt4 } from 'react-icons/hi';
