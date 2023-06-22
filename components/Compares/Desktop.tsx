@@ -1,10 +1,13 @@
 import Image from 'next/image';
-import desktopData from '@/data/desktopData.json';
 import Link from 'next/link';
 import { HiOutlineMinusSm } from 'react-icons/hi';
 import { MdOutlineKeyboardArrowRight } from 'react-icons/md';
 
-const Desktop = () => {
+const Desktop = <TData extends DesktopCompares>({
+	desktopData,
+}: {
+	desktopData: TData[];
+}) => {
 	return (
 		<div className='container mx-auto h-fit w-full'>
 			<div className='w-full h-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2 lg:grid-cols-4 justify-center items-center'>

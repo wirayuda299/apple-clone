@@ -1,7 +1,9 @@
 'use client';
 import { useState } from 'react';
-import Laptop from './Laptop';
+import Laptop from './Laptops/Laptop';
 import Desktop from './Desktop';
+import data from '@/data/laptopData.json';
+import desktopData from '@/data/desktopData.json';
 
 const Compares = () => {
 	const [selectedOptions, setSelectedOptions] = useState<string>('laptop');
@@ -32,8 +34,10 @@ const Compares = () => {
 					Desktop
 				</button>
 			</div>
-			{selectedOptions === 'laptop' && <Laptop />}
-			{selectedOptions === 'desktop' && <Desktop />}
+			{selectedOptions === 'laptop' && <Laptop data={data} />}
+			{selectedOptions === 'desktop' && (
+				<Desktop desktopData={desktopData as DesktopCompares[]} />
+			)}
 		</section>
 	);
 };

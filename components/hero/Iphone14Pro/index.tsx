@@ -17,7 +17,7 @@ export default async function HeroIphone14() {
 						<p className='text-center text-lg sm:text-2xl md:text-3xl '>
 							{res[0].subTitle}
 						</p>
-						<div className='mt-2'>
+						<div className=''>
 							<HeroLinks />
 						</div>
 					</div>

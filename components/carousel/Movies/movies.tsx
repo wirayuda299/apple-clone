@@ -24,7 +24,7 @@ export default function Movies() {
 			>
 				{data.map((data) => (
 					<SwiperSlide key={data.id}>
-						<picture className='relative ' key={data.id}>
+						<picture className='relative' key={data.id}>
 							<source srcSet={data.image_small} media='(max-width:1024px)' />
 							<Image
 								src={data.image_large}

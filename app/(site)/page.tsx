@@ -1,4 +1,4 @@
-import MovieCarousel from '@/components/carousel/movies';
+import MovieCarousel from '@/components/carousel/Movies/movies';
 import Heros from '@/components/hero/index';
 import Promo from '@/components/promo';
 import { Suspense } from 'react';

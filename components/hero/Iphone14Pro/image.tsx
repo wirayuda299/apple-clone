@@ -10,7 +10,7 @@ export default function HeroImage({
 	title,
 }: HeroImageProps) {
 	return (
-		<picture className='w-full h-screen'>
+		<picture className='w-full h-screen pb-[65px]'>
 			<source
 				media='(max-width:734px)'
 				width={imageSmall.width}

@@ -1,8 +1,7 @@
 'use client';
 import navlists from '../../data/navlists.json';
-import { AiOutlineSearch } from 'react-icons/ai';
-import CloseButton from './CloseButton';
-import Navlink from './navLink';
+import { AiOutlineClose, AiOutlineSearch } from 'react-icons/ai';
+import Navlinks from './NavLink';
 import { useRecoilState } from 'recoil';
 import { navbarState } from '@/store/recoil';
 import { HiOutlineMenuAlt4 } from 'react-icons/hi';
@@ -18,14 +17,22 @@ export default function Navigation() {
 					} md:justify-center  items-start lg:gap-10 xl:gap-14 max-w-5xl  text-[#cbd5e1] lg:items-center lg:h-11 fixed lg:static z-50 top-0 w-full h-screen bg-black`}
 				>
 					{navlists.map((list) => (
-						<Navlink
+						<Navlinks
 							handleClick={() => setisOpen(false)}
 							name={list.name}
 							path={list.path}
 							key={list.id}
 						/>
 					))}
-					<CloseButton />
+					<button
+						name='close'
+						title='close'
+						type='button'
+						onClick={() => setisOpen(false)}
+						className='absolute top-3 right-3 lg:hidden'
+					>
+						<AiOutlineClose size={35} />
+					</button>
 				</ul>
 			</div>
 			<div className='inline-flex gap-5 md:gap-10'>

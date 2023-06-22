@@ -28,20 +28,5 @@
 		"id": "6",
 		"name": "Tv & Rumah",
 		"path": "/tv-rumah"
-	},
-	{
-		"id": "7",
-		"name": "Hiburan",
-		"path": "/hiburan"
-	},
-	{
-		"id": "8",
-		"name": "Dukungan",
-		"path": "/dukungan"
-	},
-	{
-		"id": "9",
-		"name": "Tempat membeli",
-		"path": "/tempat-membeli"
 	}
 ]

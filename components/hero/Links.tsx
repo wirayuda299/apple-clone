@@ -3,7 +3,7 @@ import { MdOutlineKeyboardArrowRight } from 'react-icons/md';
 
 export default function HeroLinks() {
 	return (
-		<div className='flex  justify-center items-center text-xl md:mt-5 gap-10 md:gap-16'>
+		<div className='flex  justify-center items-center text-xl gap-10 md:gap-16'>
 			<Link
 				href={'/'}
 				as={'/'}

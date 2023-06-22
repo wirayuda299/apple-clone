@@ -9,7 +9,10 @@ type NavlinkProps = {
 
 const Navlink: FC<NavlinkProps> = ({ name, path, handleClick }) => {
 	return (
-		<li className='lg:text-xs lg:font-light text-left text-2xl font-semibold'>
+		<li
+			role='listitem'
+			className='lg:text-xs lg:font-light text-left text-2xl font-semibold'
+		>
 			<Link
 				key={path}
 				as={path}
