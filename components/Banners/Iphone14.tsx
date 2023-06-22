@@ -24,7 +24,7 @@ export default async function Iphone14({ priority }: { priority: boolean }) {
 				</div>
 				<picture className='w-full h-full'>
 					<source
-						srcSet={urlFor(response[0].imageSmall.source).url()}
+						srcSet={urlFor(response[0].imageSmall.source).format('webp').url()}
 						width={response[0].imageSmall.width}
 						height={response[0].imageSmall.height}
 						media='(max-width:734px)'

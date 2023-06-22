@@ -1,7 +1,6 @@
 import HeroLinks from '../Links';
 import HeroImage from './image';
 import { sanityClient } from '@/config/sanity';
-
 export default async function HeroIphone14() {
 	const res = (await sanityClient.fetch(
 		`*[_type == "hero" && page == "home"]`
