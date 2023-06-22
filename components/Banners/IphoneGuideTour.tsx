@@ -3,11 +3,11 @@ import { urlFor } from '@/lib/sanity/utils/sanityImage';
 import Image from 'next/image';
 import Link from 'next/link';
 import { FiPlayCircle } from 'react-icons/fi';
-
+type Responses = Base & ImagesSizesTypes;
 export default async function IphoneGuideTour() {
 	const res = (await sanityClient.fetch(
 		`*[_type == "banner" && page == "iphone"]`
-	)) as ImageRes[];
+	)) as Responses[];
 
 	return (
 		<section className='w-full h-full md:p-5 relative'>

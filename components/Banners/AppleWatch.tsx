@@ -2,11 +2,11 @@ import { sanityClient } from '@/config/sanity';
 import { urlFor } from '@/lib/sanity/utils/sanityImage';
 import Image from 'next/image';
 import Link from 'next/link';
-
+type Responses = Base & ImagesSizesTypes;
 export default async function AppleWatch() {
 	const res = (await sanityClient.fetch(
 		`*[_type == "banner" && page == "watch"]`
-	)) as ImageRes[];
+	)) as Responses[];
 
 	return (
 		<section className='pt-10'>

@@ -2,11 +2,11 @@ import HeroLinks from '@/components/hero/Links';
 import { urlFor } from '@/lib/sanity/utils/sanityImage';
 import { sanityClient } from '@/config/sanity';
 import Image from 'next/image';
-
+type Responses = Base & ImagesSizesTypes;
 export default async function IpadBanners() {
 	const res = (await sanityClient.fetch(
 		`*[_type == "banner" && page == "ipad"]`
-	)) as ImageRes[];
+	)) as Responses[];
 
 	return (
 		<section className='w-full bg-white h-full grid place-content-center place-items-center '>

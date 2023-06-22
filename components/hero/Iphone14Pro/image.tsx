@@ -11,8 +11,6 @@ export default function HeroImage({
 	imageSmall,
 	title,
 }: HeroImageProps) {
-	console.log({ imageLarge, imageSmall, title });
-
 	return (
 		<picture className=' w-[50rem] h-[35rem] max-w-[70rem] md:w-[45rem] md:h-[24rem] lg:w-[58rem] !bottom-0 relative '>
 			<source

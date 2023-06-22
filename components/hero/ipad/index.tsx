@@ -2,11 +2,14 @@ import { sanityClient } from '@/config/sanity';
 import HeroImage from './HeroImage';
 import BlurryBackground from './BlurryBackground';
 import Title from './Title';
-
+type Responses = Base & {
+	imageLarge: string;
+	imageSmall: string;
+};
 export default async function IpadHero() {
 	const res = (await sanityClient.fetch(
 		`*[_type == "hero" && page == "ipad"]`
-	)) as ImageRes[];
+	)) as Responses[];
 
 	return (
 		<section className='w-full h-full overflow-hidden'>
