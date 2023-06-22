@@ -15,16 +15,16 @@ export default function HeroImage({
 				media='(max-width: 734px)'
 				width={imageSmall.width}
 				height={imageSmall.height}
-				srcSet={urlFor(imageSmall.source).url()}
+				srcSet={urlFor(imageSmall.source).format('webp').url()}
 			/>
 			<source
 				media='(max-width: 1068px)'
 				width={imageMedium.width}
 				height={imageMedium.height}
-				srcSet={urlFor(imageMedium.source).url()}
+				srcSet={urlFor(imageMedium.source).format('webp').url()}
 			/>
 			<Image
-				src={urlFor(imageLarge.source).url()}
+				src={urlFor(imageLarge.source).format('webp').url()}
 				quality={100}
 				alt='ipad pro'
 				priority={priority ? true : false}
