@@ -10,8 +10,6 @@ type Base = {
 
 type HeroImageRes = {
 	page: string;
-	imageLarge: string;
-	imageSmall: string;
-	imageMedium: string;
 	path: string;
+	heroImage: ImagesSizesTypes;
 } & Base;

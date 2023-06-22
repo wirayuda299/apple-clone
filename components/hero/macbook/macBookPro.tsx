@@ -13,13 +13,21 @@ export default async function MacBookPro() {
 		<section className={`w-full h-[40rem] overflow-hidden bg-black relative`}>
 			<picture>
 				<source
-					media='(max-width:800px)'
-					srcSet={urlFor(res[0].imageSmall).url()}
+					media='(max-width:734px)'
+					width={res[0].heroImage.imageSmall.width}
+					height={res[0].heroImage.imageSmall.height}
+					srcSet={urlFor(res[0].heroImage.imageSmall.source).url()}
+				/>
+				<source
+					media='(max-width:1068px)'
+					width={res[0].heroImage.imageMedium.width}
+					height={res[0].heroImage.imageMedium.height}
+					srcSet={urlFor(res[0].heroImage.imageMedium.source).url()}
 				/>
 				<Image
-					src={urlFor(res[0].imageLarge).url()}
-					width={1054}
-					height={500}
+					src={urlFor(res[0].heroImage.imageLarge.source).url()}
+					width={res[0].heroImage.imageLarge.width}
+					height={res[0].heroImage.imageLarge.height}
 					priority
 					fetchPriority='high'
 					className='object-contain w-full h-full object-bottom'

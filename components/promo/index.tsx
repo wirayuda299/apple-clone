@@ -32,6 +32,7 @@ export default async function Promo() {
 												<Image
 													src={urlFor(logo).url()}
 													alt='apple'
+													className='w-10 h-10 object-contain'
 													width={40}
 													height={40}
 												/>

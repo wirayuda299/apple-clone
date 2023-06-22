@@ -1,41 +1,37 @@
 import { urlFor } from '@/lib/sanity/utils/sanityImage';
 import Image from 'next/image';
 type HeroImageProps = {
-	imageSmall: Readonly<string>;
 	title: Readonly<string>;
-	imageLarge: Readonly<string>;
+	heroImage: ImagesSizesTypes;
 };
 
 export default function HeroImage({
-	imageLarge,
-	imageSmall,
+	heroImage: { imageLarge, imageSmall, imageMedium },
 	title,
 }: HeroImageProps) {
 	return (
-		<picture className=' w-[50rem] h-[35rem] max-w-[70rem] md:w-[45rem] md:h-[24rem] lg:w-[58rem] !bottom-0 relative '>
+		<picture className='w-full h-screen'>
 			<source
-				media='(max-width:767px)'
-				width={734}
-				height={548}
-				srcSet={urlFor(imageSmall)
-					.minWidth(734)
-					.minHeight(548)
-					.fit('fill')
-					.quality(60)
-					.url()}
+				media='(max-width:734px)'
+				width={imageSmall.width}
+				height={imageSmall.height}
+				srcSet={urlFor(imageSmall.source).fit('fill').quality(60).url()}
+			/>
+			<source
+				media='(max-width:1068px)'
+				width={imageMedium.width}
+				height={imageMedium.height}
+				srcSet={urlFor(imageMedium.source).fit('fill').quality(60).url()}
 			/>
 			<Image
 				priority
 				fetchPriority='high'
-				className='object-cover object-bottom w-full h-full'
+				className='object-cover h-full w-full object-center'
 				alt={title}
-				quality={65}
-				src={urlFor(imageLarge)
-					.minWidth(1080)
-					.minHeight(553)
-					.auto('format')
-					.url()}
-				fill
+				quality={100}
+				src={urlFor(imageLarge.source).auto('format').url()}
+				width={imageLarge.width}
+				height={imageLarge.height}
 			/>
 		</picture>
 	);

@@ -2,25 +2,37 @@ import { sanityClient } from '@/config/sanity';
 import HeroImage from './HeroImage';
 import BlurryBackground from './BlurryBackground';
 import Title from './Title';
-type Responses = Base & {
-	imageLarge: string;
-	imageSmall: string;
-};
+
 export default async function IpadHero() {
 	const res = (await sanityClient.fetch(
 		`*[_type == "hero" && page == "ipad"]`
-	)) as Responses[];
+	)) as HeroImageRes[];
 
 	return (
 		<section className='w-full h-full overflow-hidden'>
 			<div className='w-full relative h-full'>
 				<BlurryBackground />
-				<div className='max-w-5xl mx-auto h-[40rem] relative'>
-					<div className='flex flex-col lg:flex-row lg:justify-between gap-10 items-center w-full h-full relative'>
+				<div className='w-full flex justify-center flex-col items-center h-[40rem] relative'>
+					<div className='flex flex-col lg:flex-row lg:justify-center gap-10 items-center w-full h-full relative'>
 						<Title />
 						<HeroImage
-							imageLarge={res[0].imageLarge}
-							imageSmall={res[0].imageSmall}
+							heroImage={{
+								imageLarge: {
+									source: res[0].heroImage.imageLarge.source,
+									width: res[0].heroImage.imageLarge.width,
+									height: res[0].heroImage.imageLarge.height,
+								},
+								imageMedium: {
+									source: res[0].heroImage.imageMedium.source,
+									width: res[0].heroImage.imageMedium.width,
+									height: res[0].heroImage.imageMedium.height,
+								},
+								imageSmall: {
+									source: res[0].heroImage.imageMedium.source,
+									width: res[0].heroImage.imageMedium.width,
+									height: res[0].heroImage.imageMedium.height,
+								},
+							}}
 							priority={true}
 						/>
 					</div>

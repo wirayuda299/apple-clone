@@ -2,7 +2,7 @@ import Image from 'next/image';
 import HeroLinks from '../Links';
 export default function Title() {
 	return (
-		<div className='p-5'>
+		<div className='w-full flex justify-center flex-col items-center lg:items-start  absolute lg:left-16 p-5'>
 			<h2 className='text-4xl md:text-6xl text-center font-semibold whitespace-nowrap'>
 				iPad Pro
 			</h2>
