@@ -6,45 +6,13 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import { AiFillPlayCircle } from 'react-icons/ai';
-import { sanityClient } from '@/config/sanity';
-import { useEffect, useState } from 'react';
 import { urlFor } from '@/lib/sanity/utils/sanityImage';
 
-type MoviesCarousels = {
-	genre: string;
-	name: string;
-	subTitle: string;
-	carouselImage: ImagesSizesTypes;
-} & Base;
-
-const getMoviesCarousels = async (): Promise<
-	MoviesCarousels[] | string | undefined
-> => {
-	try {
-		const response = await sanityClient.fetch(`*[_type == "carousels" ]`);
-		if (!response) {
-			throw new Error('Something went wrong whil fetch movies data');
-		}
-		return response as MoviesCarousels[];
-	} catch (error) {
-		if (error instanceof Error) {
-			return error.message;
-		}
-	}
-};
-
-export default function Movies() {
-	const [movies, setMovies] = useState<MoviesCarousels[]>([]);
-
-	useEffect(() => {
-		(async () => {
-			const moviesData = await getMoviesCarousels();
-			if (moviesData) {
-				setMovies(moviesData as MoviesCarousels[]);
-			}
-		})();
-	}, []);
-
+export default function Movies<T extends MoviesCarousels[]>({
+	movies,
+}: {
+	movies: T;
+}) {
 	return (
 		<div>
 			<Swiper

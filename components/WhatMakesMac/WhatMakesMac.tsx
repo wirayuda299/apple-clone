@@ -5,7 +5,7 @@ import Image from 'next/image';
 
 export default function WhatMakesMac() {
 	return (
-		<section>
+		<section className='bg-[#fafafa]'>
 			<div className='max-w-4xl mx-auto text-black'>
 				<h2 className='text-4xl lg:text-6xl xl:text-7xl font-semibold pt-20 text-[#1d1d1f] text-center'>
 					Apa yang menjadikannya sebuah Mac?
@@ -16,7 +16,7 @@ export default function WhatMakesMac() {
 					<div className='grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 w-full overflow-hidden place-items-center '>
 						{whatMakeMac.map((val) => (
 							<div
-								className='flex flex-col md:lg-h-[30rem] lg:h-full max-w-lg relative w-full justify-center items-center'
+								className='flex flex-col w-[30rem] h-full max-w-lg relative aspect-square justify-center items-center'
 								key={val.id}
 							>
 								<div>
@@ -47,7 +47,12 @@ export default function WhatMakesMac() {
 								</div>
 								{val.image && (
 									<div className={val.imageStyle}>
-										<Image src={val.image} fill alt='mac' />
+										<Image
+											src={val.image}
+											fill
+											alt={val.imagealt}
+											loading='lazy'
+										/>
 									</div>
 								)}
 							</div>
