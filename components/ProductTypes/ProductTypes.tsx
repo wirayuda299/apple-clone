@@ -15,18 +15,28 @@ export default function ProductTypes<T extends ProductType>({
 }) {
 	return (
 		<header className='overflow-hidden'>
-			<div className='max-w-3xl mx-auto grid place-content-center overflow-hidden p-2'>
-				<div className='bg-white flex snap-mandatory snap-center gap-5 overflow-x-auto'>
+			<div className='max-w-5xl mx-auto grid place-content-center overflow-hidden p-2'>
+				<div className='bg-white flex snap-mandatory snap-center gap-5 overflow-x-auto w-full'>
 					{productTypes.map((mac) => (
-						<Link href={mac.path} key={mac.id}>
+						<Link
+							href={mac.path}
+							prefetch={false}
+							key={mac.id}
+							className='group'
+						>
 							<Image
-								className='w-14 h-14 '
+								className='w-14 h-14 object-contain mx-auto'
 								src={mac.image}
 								alt={mac.name}
 								width={100}
 								height={100}
 							/>
-							<p className='text-black md:text-center text-xs'>{mac.name}</p>
+							<p
+								title={mac.name}
+								className='text-black p-2 md:text-center text-xs group-hover:text-blue-600 transition-all ease duration-300 truncate'
+							>
+								{mac.name}
+							</p>
 						</Link>
 					))}
 				</div>

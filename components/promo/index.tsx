@@ -6,9 +6,9 @@ import { urlFor } from '@/lib/sanity/utils/sanityImage';
 import PromoImages from './Images';
 
 export default async function Promo() {
-	const promos = (await sanityClient.fetch(`*[_type == "promos"]`)) as Readonly<
-		PromoResponseTypes[]
-	>;
+	const promos = (await sanityClient.fetch(
+		`*[_type == "promos"] | order(_createdAt asc)`
+	)) as Readonly<PromoResponseTypes[]>;
 
 	return (
 		<section className='w-full bg-white p-3'>

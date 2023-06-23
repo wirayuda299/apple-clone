@@ -1,8 +1,14 @@
+import ProductTypes from '@/components/ProductTypes/ProductTypes';
 import Image from 'next/image';
 import Link from 'next/link';
+import appletvTypes from '@/data/appletvTypes.json';
+
 export default function TvRumah() {
 	return (
 		<section>
+			<section className='pt-10 w-full bg-white'>
+				<ProductTypes productTypes={appletvTypes} />
+			</section>
 			<div className='w-full bg-[#f5f5f7] text-black h-full'>
 				<div className='max-w-7xl mx-auto text-center flex flex-col items-center justify-center h-[calc(100vh_-_5rem)]'>
 					<Image

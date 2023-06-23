@@ -1,0 +1,62 @@
+[
+	{
+		"id": "1",
+		"name": "iPhone 14 Pro",
+		"image": "/assets/images/svgs/iphone_14_pro.svg",
+		"path": "/iphone14-pro"
+	},
+	{
+		"id": "2",
+		"name": "iPhone 14",
+		"image": "/assets/images/svgs/iphone_14.svg",
+		"path": "/iphone14"
+	},
+	{
+		"id": "3",
+		"name": "iPhone 13",
+		"image": "/assets/images/svgs/iphone_13.svg",
+		"path": "/iphone-13"
+	},
+	{
+		"id": "4",
+		"name": "iPhone SE",
+		"image": "/assets/images/svgs/iphone_se_light.svg",
+		"path": "/iphone-se"
+	},
+	{
+		"id": "5",
+		"name": "iPhone 12",
+		"image": "/assets/images/svgs/iphone_12.svg",
+		"path": "/iphone-12"
+	},
+	{
+		"id": "6",
+		"name": "Bandingkan",
+		"image": "/assets/images/svgs/iphone_compare.svg",
+		"path": "/compare"
+	},
+	{
+		"id": "7",
+		"name": "Compare",
+		"image": "/assets/images/svgs/mac_compare.svg",
+		"path": "/compare"
+	},
+	{
+		"id": "8",
+		"name": "AirPods",
+		"image": "/assets/images/svgs/airpods.svg",
+		"path": "/airpods"
+	},
+	{
+		"id": "9",
+		"name": "Airtag",
+		"image": "/assets/images/svgs/airtag.svg",
+		"path": "/airtag"
+	},
+	{
+		"id": "10",
+		"name": "Ios 16",
+		"image": "/assets/images/svgs/iphone_ios_light.svg",
+		"path": "/ios-16"
+	}
+]

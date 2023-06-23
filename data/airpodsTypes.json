@@ -1,0 +1,38 @@
+[
+	{
+		"id": "1",
+		"name": "Airpods Generasi ke-2",
+		"image": "/assets/images/svgs/airpods_2gen.svg",
+		"path": "/airpods-gen-2"
+	},
+	{
+		"id": "2",
+		"name": "Airpods Generasi ke-3",
+		"image": "/assets/images/svgs/airpods_3gen.svg",
+		"path": "/apple-watch-series-8"
+	},
+	{
+		"id": "3",
+		"name": "Airpods Generasi Pro ke-2",
+		"image": "/assets/images/svgs/airpods_pro_2gen.svg",
+		"path": "/apple-watch-se"
+	},
+	{
+		"id": "4",
+		"name": "Airpods Max",
+		"image": "/assets/images/svgs/airpods_max.svg",
+		"path": "/airpods-max"
+	},
+	{
+		"id": "5",
+		"name": "Bandingkan",
+		"image": "/assets/images/svgs/iphone_compare.svg",
+		"path": "/airpods"
+	},
+	{
+		"id": "6",
+		"name": "Apple Music",
+		"image": "/assets/images/svgs/apple_music.svg",
+		"path": "/compare"
+	}
+]

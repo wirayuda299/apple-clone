@@ -1,0 +1,50 @@
+[
+	{
+		"id": "1",
+		"name": "Apple Watch Ultra",
+		"image": "/assets/images/svgs/watch_nav_ultra.svg",
+		"path": "/apple-watch-ultra"
+	},
+	{
+		"id": "2",
+		"name": "Apple Watch Series 8",
+		"image": "/assets/images/svgs/watch_nav_series_8.svg",
+		"path": "/apple-watch-series-8"
+	},
+	{
+		"id": "3",
+		"name": "Apple Watch SE",
+		"image": "/assets/images/svgs/watch_nav_se.svg",
+		"path": "/apple-watch-se"
+	},
+	{
+		"id": "4",
+		"name": "Apple Watch Nike",
+		"image": "/assets/images/svgs/watch_nav_nike.svg",
+		"path": "/apple-watch-nike"
+	},
+	{
+		"id": "5",
+		"name": "AirPods",
+		"image": "/assets/images/svgs/airpods.svg",
+		"path": "/airpods"
+	},
+	{
+		"id": "6",
+		"name": "Bandingkan",
+		"image": "/assets/images/svgs/iphone_compare.svg",
+		"path": "/compare"
+	},
+	{
+		"id": "7",
+		"name": "Apple Fitness+",
+		"image": "/assets/images/svgs/watch_nav_fitness.svg",
+		"path": "/apple-fitness"
+	},
+	{
+		"id": "8",
+		"name": "watchOS",
+		"image": "/assets/images/svgs/watch_nav_watch_os.svg",
+		"path": "/watch-os"
+	}
+]

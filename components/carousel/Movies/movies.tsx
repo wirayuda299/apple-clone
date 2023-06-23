@@ -6,37 +6,84 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import { AiFillPlayCircle } from 'react-icons/ai';
-import data from '@/data/movieCarousel.json';
+import { sanityClient } from '@/config/sanity';
+import { useEffect, useState } from 'react';
+import { urlFor } from '@/lib/sanity/utils/sanityImage';
+
+type MoviesCarousels = {
+	genre: string;
+	name: string;
+	subTitle: string;
+	carouselImage: ImagesSizesTypes;
+} & Base;
+
+const getMoviesCarousels = async (): Promise<
+	MoviesCarousels[] | string | undefined
+> => {
+	try {
+		const response = await sanityClient.fetch(`*[_type == "carousels" ]`);
+		if (!response) {
+			throw new Error('Something went wrong whil fetch movies data');
+		}
+		return response as MoviesCarousels[];
+	} catch (error) {
+		if (error instanceof Error) {
+			return error.message;
+		}
+	}
+};
 
 export default function Movies() {
+	const [movies, setMovies] = useState<MoviesCarousels[]>([]);
+
+	useEffect(() => {
+		(async () => {
+			const moviesData = await getMoviesCarousels();
+			if (moviesData) {
+				setMovies(moviesData as MoviesCarousels[]);
+			}
+		})();
+	}, []);
+
 	return (
 		<div>
 			<Swiper
 				slidesPerView={1}
 				loop={true}
 				autoplay={{
-					delay: 8000,
+					delay: 5000,
 				}}
 				pagination={{
 					clickable: true,
 				}}
 				modules={[Autoplay]}
 			>
-				{data.map((data) => (
-					<SwiperSlide key={data.id}>
-						<picture className='relative' key={data.id}>
-							<source srcSet={data.image_small} media='(max-width:1024px)' />
+				{movies.map((data) => (
+					<SwiperSlide key={data._id}>
+						<picture className='relative'>
+							<source
+								srcSet={urlFor(data.carouselImage.imageSmall.source).url()}
+								media='(max-width:734px)'
+								width={data.carouselImage.imageSmall.width}
+								height={data.carouselImage.imageSmall.height}
+							/>
+							<source
+								srcSet={urlFor(data.carouselImage.imageMedium.source).url()}
+								media='(max-width:1068px)'
+								width={data.carouselImage.imageMedium.width}
+								height={data.carouselImage.imageMedium.height}
+							/>
 							<Image
-								src={data.image_large}
+								src={urlFor(data.carouselImage.imageLarge.source).url()}
 								alt={data.title}
-								width={980}
+								width={data.carouselImage.imageLarge.width}
+								height={data.carouselImage.imageLarge.height}
 								loading='lazy'
 								fetchPriority='low'
-								height={551}
 								className='object-cover w-full'
 							/>
 							<div className='relative w-full h-full '>
-								<div className='absolute p-5 z-10 md:bottom-0 -top-16 h-full left-3 flex flex-col-reverse md:flex-row justify-start items-center md:items-end w-full  gap-10 '>
+								<div className='absolute p-5 z-10 md:bottom-0 -top-16 h-full left-3 flex flex-col-reverse sm:flex-row justify-start items-center md:items-end w-full  gap-10 '>
 									<button
 										type='button'
 										name='streaming'
@@ -48,31 +95,15 @@ export default function Movies() {
 										</p>
 										<AiFillPlayCircle className='text-2xl' />
 									</button>
-									<h2 className='font-bold text-2xl max-w-2xl text-center md:text-left flex-col md:items-center md:gap-2 md:flex-row flex '>
+									<h2 className='font-bold text-2xl max-w-2xl text-center md:text-left flex-col md:items-center sm:gap-3 sm:flex-row flex '>
 										<p className='text-3xl uppercase md:capitalize md:text-xl lg:text-2xl'>
-											{data.category}
+											{data.genre}
 										</p>
 										<span className='hidden md:block'>-</span>
-										<span className='text-sm font-normal md:text-base lg:text-xl'>
-											{data.subtext}
+										<span className='text-sm font-normal md:text-base text-center sm:text-left lg:text-xl'>
+											{data.subTitle}
 										</span>
 									</h2>
-									<div className='absolute top-3 block md:hidden'>
-										<div className='flex items-center justify-center space-x-2 p-3'>
-											<Image
-												src={'/assets/images/logo/apple.svg'}
-												width={50}
-												height={50}
-												loading='lazy'
-												className='w-9 h-9'
-												alt={'apple'}
-											/>
-											<h3 className='font-bold uppercase text-2xl'>TV+</h3>
-										</div>
-										<h4 className='font-extrabold text-5xl text-center uppercase'>
-											{data.title}
-										</h4>
-									</div>
 								</div>
 							</div>
 						</picture>

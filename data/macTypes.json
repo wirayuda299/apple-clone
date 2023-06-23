@@ -3,7 +3,7 @@
 		"id": "1",
 		"name": "Macbook Air",
 		"image": "/assets/images/svgs/mac.svg",
-		"path": "/mac/macbook-air"
+		"path": "/macbook-air"
 	},
 	{
 		"id": "2",
@@ -38,7 +38,7 @@
 	{
 		"id": "7",
 		"name": "Compare",
-		"image": "/assets/images/svgs/mac_compare.svg",
+		"image": "/assets/images/svgs/iphone_compare.svg",
 		"path": "/compare"
 	},
 	{

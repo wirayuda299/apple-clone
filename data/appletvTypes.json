@@ -1,0 +1,26 @@
+[
+	{
+		"id": "1",
+		"name": "Apple Tv 4k",
+		"image": "/assets/images/svgs/apple_tv4k.svg",
+		"path": "/apple-tv-4k"
+	},
+	{
+		"id": "2",
+		"name": "Apple TV HD",
+		"image": "/assets/images/svgs/apple_tv.svg",
+		"path": "/apple-tv-hd"
+	},
+	{
+		"id": "3",
+		"name": "Aplikasi Apple TV",
+		"image": "/assets/images/svgs/apple_tv_app.svg",
+		"path": "/apple-watch-se"
+	},
+	{
+		"id": "4",
+		"name": "Apple TV+",
+		"image": "/assets/images/svgs/apple_tv_plus.svg",
+		"path": "/apple-tv-plus"
+	}
+]

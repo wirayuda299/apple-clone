@@ -7,10 +7,14 @@ import AirPods from '@/components/Banners/AirPods';
 import Ios16 from '@/components/Banners/Ios16';
 import SwitchToIphone from '@/components/Banners/SwitchToIphone';
 import IphoneGuideTour from '@/components/Banners/IphoneGuideTour';
-
+import ProductTypes from '@/components/ProductTypes/ProductTypes';
+import iphoneTypes from '@/data/iphoneTypes.json';
 export default async function IphonePage() {
 	return (
 		<section className='bg-[#f2f2f2] '>
+			<section className='pt-10 w-full bg-white'>
+				<ProductTypes productTypes={iphoneTypes} />
+			</section>
 			<Iphone14 priority={true} />
 			<section className='bg-black '>
 				<HeroIphone14 />
