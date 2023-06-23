@@ -43,7 +43,7 @@ export default function Movies<T extends MoviesCarousels[]>({
 							/>
 							<Image
 								src={urlFor(data.carouselImage.imageLarge.source).url()}
-								alt={data.title}
+								alt={data?.title ?? 'carousel image'}
 								width={data.carouselImage.imageLarge.width}
 								height={data.carouselImage.imageLarge.height}
 								loading='lazy'
