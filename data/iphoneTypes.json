@@ -37,25 +37,19 @@
 	},
 	{
 		"id": "7",
-		"name": "Compare",
-		"image": "/assets/images/svgs/mac_compare.svg",
-		"path": "/compare"
-	},
-	{
-		"id": "8",
 		"name": "AirPods",
 		"image": "/assets/images/svgs/airpods.svg",
 		"path": "/airpods"
 	},
 	{
-		"id": "9",
+		"id": "8",
 		"name": "Airtag",
 		"image": "/assets/images/svgs/airtag.svg",
 		"path": "/airtag"
 	},
 	{
-		"id": "10",
-		"name": "Ios 16",
+		"id": "9",
+		"name": "IOS 16",
 		"image": "/assets/images/svgs/iphone_ios_light.svg",
 		"path": "/ios-16"
 	}
