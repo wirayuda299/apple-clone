@@ -18,7 +18,7 @@ export default function Title() {
 						height={100}
 						quality={100}
 						loading='lazy'
-						src={'/assets/images/compares/m2.png'}
+						src={'/assets/images/logo/m2.png'}
 						alt='m2'
 					/>
 				</div>
