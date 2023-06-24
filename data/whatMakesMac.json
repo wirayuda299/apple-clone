@@ -7,7 +7,7 @@
 		"textTitle": "melakukannya",
 		"subTitle": "Temukan apa yang bisa Mac lakukan untuk Anda.",
 		"image": "/assets/images/mac/mdt_family__gkejyxsh4p26_large.jpg",
-		"imageStyle": "relative w-full md:w-[30rem] h-[20rem] aspect-square",
+		"imageStyle": "relative w-[20rem] md:w-[30rem] h-[20rem] aspect-square",
 		"imagealt": "Mac",
 		"path": "/selengkapnya",
 		"pathTitle": "Selengkapnya"

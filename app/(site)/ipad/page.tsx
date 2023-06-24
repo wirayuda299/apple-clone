@@ -11,10 +11,9 @@ import IpadAccessoris from '@/components/Banners/IpadAccessoris';
 import WhatMakesIpad from '@/components/Banners/WhatMakesIpad';
 import Ipadfeatures from '@/components/Banners/Ipadfeatures';
 import Features from '@/components/Banners/Features';
-
 export default function IpadPage() {
 	return (
-		<div className='pt-10 bg-[#f5f5f7] w-full h-full grid place-items-center'>
+		<div className='pt-10 bg-[#f5f5f7] w-full h-full '>
 			<section className='pt-2 w-full bg-white'>
 				<ProductTypes productTypes={ipadtypes} />
 			</section>

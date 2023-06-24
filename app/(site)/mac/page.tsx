@@ -1,6 +1,5 @@
 import MacBookPro from '@/components/hero/macbook/macBookPro';
 import MacMini from '@/components/hero/macmini/macMini';
-import Compares from '@/components/Compares/Compares';
 import WhatMakesMac from '@/components/WhatMakesMac/WhatMakesMac';
 import ProductTypes from '@/components/ProductTypes/ProductTypes';
 import macbookTypes from '@/data/macTypes.json';
@@ -12,7 +11,6 @@ export default function Mac() {
 			<ProductTypes productTypes={macbookTypes} />
 			<MacBookPro />
 			<MacMini />
-			<Compares />
 			<WhatMakesMac />
 			<AppCarousels />
 		</div>

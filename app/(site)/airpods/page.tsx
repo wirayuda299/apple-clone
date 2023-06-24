@@ -4,6 +4,7 @@ import AirPodsMax from '@/components/Banners/AirPodsMax';
 import ProductTypes from '@/components/ProductTypes/ProductTypes';
 import AirPodsPro from '@/components/hero/AirPodsPro/AirPodsPro';
 import airdpodsTypes from '@/data/airpodsTypes.json';
+
 export default function AirPodsPage() {
 	return (
 		<section className='bg-white w-full h-full'>
