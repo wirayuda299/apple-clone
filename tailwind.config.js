@@ -4,9 +4,6 @@ module.exports = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
-
-    // Or if using `src` directory:
-    "./src/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     extend: {
@@ -16,8 +13,13 @@ module.exports = {
           '100%': { opacity: '100' }
         }
       },
+      slide: {
+        "0%": { height: "0", top: "-100%", left: "0" },
+        "100%": { height: "100%", top: "0", left: "0" }
+      },
       animation: {
-        "fadeIn": 'fadein 1s ease-in-out forwards'
+        "fadeIn": 'fadein 1s ease-in-out forwards',
+        "slide": "slide 500ms ease-in forwards"
       }
     },
   },
