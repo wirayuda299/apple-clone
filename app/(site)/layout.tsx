@@ -10,13 +10,13 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: ReactNode }) {
 	return (
-		<section className='bg-black text-white select-none'>
-			<main className='w-full h-full overflow-hidden'>
-				<Providers>
+		<Providers>
+			<section className='bg-black text-white select-none'>
+				<main className='w-full h-full overflow-hidden'>
 					<Header />
 					{children}
-				</Providers>
-			</main>
-		</section>
+				</main>
+			</section>
+		</Providers>
 	);
 }
