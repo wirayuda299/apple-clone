@@ -14,8 +14,8 @@ module.exports = {
         }
       },
       slide: {
-        "0%": { height: "0", top: "-100%", left: "0" },
-        "100%": { height: "100%", top: "0", left: "0" }
+        "0%": { height: "0", top: "-100%", left: "0", height: "0" },
+        "100%": { height: "100%", top: "0", left: "0", height: "100vh" }
       },
       animation: {
         "fadeIn": 'fadein 1s ease-in-out forwards',

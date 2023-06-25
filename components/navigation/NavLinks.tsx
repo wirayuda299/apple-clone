@@ -11,7 +11,7 @@ const Navlink: FC<NavlinkProps> = ({ name, path, handleClick }) => {
 	return (
 		<li
 			role='listitem'
-			className='lg:text-xs group lg:hover:text-blue-600 lg:transition-all md:pl-8 ease duration-300 w-full lg:font-light text-left text-2xl font-semibold'
+			className='lg:text-xs delay-75 group lg:hover:text-blue-600 lg:transition-all md:pl-8 ease duration-300 w-full lg:font-light text-left text-2xl font-semibold'
 		>
 			<Link
 				key={path}
