@@ -1,5 +1,6 @@
 import { urlFor } from '@/lib/sanity/utils/sanityImage';
 import Image from 'next/image';
+
 type HeroImageProps = {
 	title: Readonly<string>;
 	heroImage: ImagesSizesTypes;

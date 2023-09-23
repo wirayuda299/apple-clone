@@ -1,5 +1,7 @@
-import { urlFor } from '@/lib/sanity/utils/sanityImage';
 import Image from 'next/image';
+
+import { urlFor } from '@/lib/sanity/utils/sanityImage';
+
 type PromoImagesProps = ImagesSizesTypes & {
 	title: string;
 };

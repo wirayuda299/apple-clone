@@ -1,7 +1,8 @@
-import whatMakeMac from '@/data/whatMakesMac.json';
+import Image from 'next/image';
 import Link from 'next/link';
 import { MdOutlineKeyboardArrowRight } from 'react-icons/md';
-import Image from 'next/image';
+
+import whatMakeMac from '@/data/whatMakesMac.json';
 
 export default function WhatMakesMac() {
 	return (
@@ -19,9 +20,17 @@ export default function WhatMakesMac() {
 								className='flex flex-col w-full h-fit lg:h-full relative justify-center items-center'
 								key={val.id}
 							>
-								<div className={`p-3 ${!val.image ? 'flex flex-col items-center justify-center h-full' : ' '} lg:absolute top-0  w-full max-w-lg`}>
+								<div
+									className={`p-3 ${
+										!val.image
+											? 'flex flex-col items-center justify-center h-full'
+											: ' '
+									} lg:absolute top-0  w-full max-w-lg`}
+								>
 									{val.topText !== '' && (
-										<p className={`${val.topTextStyle} text-md `}>{val?.topText}</p>
+										<p className={`${val.topTextStyle} text-md `}>
+											{val?.topText}
+										</p>
 									)}
 									<h3 className='text-black text-center text-2xl sm:text-3xl py-2 font-bold'>
 										{val.title}{' '}
@@ -46,14 +55,14 @@ export default function WhatMakesMac() {
 									)}
 								</div>
 								{val.image && (
-										<Image
-											width={500}
-											height={300}
-											src={val.image}
-											alt={val.imagealt}
-											loading='lazy'
-											className='object-contain w-full h-full lg:object-bottom '
-										/>
+									<Image
+										width={500}
+										height={300}
+										src={val.image}
+										alt={val.imagealt}
+										loading='lazy'
+										className='object-contain w-full h-full lg:object-bottom '
+									/>
 								)}
 							</div>
 						))}

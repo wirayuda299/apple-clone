@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import HeroLinks from '../Links';
+
 export default function Title() {
 	return (
 		<div className='w-full flex justify-center flex-col items-center lg:items-start  absolute lg:left-16 p-5'>

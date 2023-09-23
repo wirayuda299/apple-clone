@@ -1,13 +1,12 @@
-import { sanityClient } from '@/config/sanity';
-import { urlFor } from '@/lib/sanity/utils/sanityImage';
 import Image from 'next/image';
 import Link from 'next/link';
 import { SlArrowRight } from 'react-icons/sl';
 
+import { getMacbookPro } from '@/lib/sanity/actions';
+import { urlFor } from '@/lib/sanity/utils/sanityImage';
+
 export default async function MacBookPro() {
-	const res = (await sanityClient.fetch(
-		`*[_type == "hero" && page == "mac"]`
-	)) as Readonly<HeroImageRes[]>;
+	const res = await getMacbookPro();
 
 	return (
 		<section className={`w-full h-[40rem] overflow-hidden bg-black relative`}>

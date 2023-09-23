@@ -1,20 +1,19 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { MdOutlineKeyboardArrowRight } from 'react-icons/md';
-import { sanityClient } from '@/config/sanity';
+
 import { urlFor } from '@/lib/sanity/utils/sanityImage';
 import PromoImages from './Images';
+import { getPromo } from '@/lib/sanity/actions';
 
 export default async function Promo() {
-	const promos = (await sanityClient.fetch(
-		`*[_type == "promos"] | order(_createdAt asc)`
-	)) as Readonly<PromoResponseTypes[]>;
+	const promos = await getPromo();
 
 	return (
 		<section className='w-full bg-white p-3'>
 			<div className='container mx-auto'>
 				<article className='grid grid-cols-1 md:grid-cols-2 w-full gap-5 h-full'>
-					{promos.map(
+					{promos?.map(
 						({ promosImage, _id, title, styles, logo, subTitle, pathLeft }) => (
 							<div className='relative w-full' key={_id}>
 								<PromoImages

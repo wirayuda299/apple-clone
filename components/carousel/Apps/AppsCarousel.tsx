@@ -1,13 +1,15 @@
 'use client';
+
 import Image from 'next/image';
+import Link from 'next/link';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay, EffectFade, Navigation } from 'swiper';
+import { MdOutlineKeyboardArrowRight } from 'react-icons/md';
+
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/effect-fade';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay, EffectFade, Navigation } from 'swiper';
-import Link from 'next/link';
-import { MdOutlineKeyboardArrowRight } from 'react-icons/md';
 
 type Lists = {
 	listId: number;

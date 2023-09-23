@@ -1,9 +1,11 @@
-import MacBookPro from '@/components/hero/macbook/macBookPro';
-import MacMini from '@/components/hero/macmini/macMini';
-import WhatMakesMac from '@/components/WhatMakesMac/WhatMakesMac';
-import ProductTypes from '@/components/ProductTypes/ProductTypes';
+import {
+	MacMini,
+	MacBookPro,
+	WhatMakesMac,
+	ProductTypes,
+	AppCarousels,
+} from '@/components/index';
 import macbookTypes from '@/data/macTypes.json';
-import AppCarousels from '@/components/carousel/Apps';
 
 export default function Mac() {
 	return (

@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
+
 export default function AirPods2ndGen() {
 	return (
 		<div className='w-full bg-white relative mt-10 h-full overflow-hidden'>

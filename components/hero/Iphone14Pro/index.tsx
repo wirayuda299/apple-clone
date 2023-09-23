@@ -1,10 +1,9 @@
+import { getHeroIphone14 } from '@/lib/sanity/actions';
 import HeroLinks from '../Links';
 import HeroImage from './image';
-import { sanityClient } from '@/config/sanity';
+
 export default async function HeroIphone14() {
-	const res = (await sanityClient.fetch(
-		`*[_type == "hero" && page == "home"]`
-	)) as Readonly<HeroImageRes[]>;
+	const res = await getHeroIphone14();
 
 	return (
 		<section className='text-black w-full h-[93vh] text-center overflow-hidden'>

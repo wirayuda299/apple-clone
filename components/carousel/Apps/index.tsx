@@ -1,9 +1,8 @@
-import Lists from '@/components/Apps/BuiltInApps/Lists';
-import AppCarouselMobile from './AppsCarousel';
 import applists from '@/data/builtInApps.json';
 import proApps from '@/data/proApps.json';
-import ProApps from '@/components/Apps/Pro/ProApps';
-import Title from '@/components/Apps/title';
+
+import AppCarouselMobile from './AppsCarousel';
+import { Lists, ProApps, Title } from '@/components/index';
 
 export default function AppCarousels() {
 	return (

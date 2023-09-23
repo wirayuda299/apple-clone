@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { SlArrowRight } from 'react-icons/sl';
+
 export default function MacMini() {
 	return (
 		<section

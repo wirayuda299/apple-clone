@@ -1,11 +1,12 @@
-import ProductTypes from '@/components/ProductTypes/ProductTypes';
 import Image from 'next/image';
 import Link from 'next/link';
+
 import appletvTypes from '@/data/appletvTypes.json';
+import { ProductTypes } from '@/components/index';
 
 export default function TvRumah() {
 	return (
-		<section>
+		<div>
 			<section className='pt-10 w-full bg-white'>
 				<ProductTypes productTypes={appletvTypes} />
 			</section>
@@ -219,6 +220,6 @@ export default function TvRumah() {
 					</div>
 				</section>
 			</section>
-		</section>
+		</div>
 	);
 }

@@ -1,11 +1,10 @@
-import { sanityClient } from '@/config/sanity';
 import HeroImage from './HeroImage';
 import Title from './Title';
 
+import { getHeroIpad } from '@/lib/sanity/actions';
+
 export default async function IpadHero() {
-	const res = (await sanityClient.fetch(
-		`*[_type == "hero" && page == "ipad"]`
-	)) as HeroImageRes[];
+	const res = await getHeroIpad();
 
 	return (
 		<section className='w-full h-full overflow-hidden'>

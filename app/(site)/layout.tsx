@@ -1,7 +1,8 @@
-import { Metadata } from 'next';
+import type { Metadata } from 'next';
 import type { ReactNode } from 'react';
+
 import Providers from '@/provider';
-import Header from '@/components/header';
+import { Header } from '@/components/index';
 
 export const metadata: Metadata = {
 	title: 'Apple - apple website clone',

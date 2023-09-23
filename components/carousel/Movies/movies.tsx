@@ -1,11 +1,14 @@
 'use client';
+
 import Image from 'next/image';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { AiFillPlayCircle } from 'react-icons/ai';
 import { Autoplay } from 'swiper';
+
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import { AiFillPlayCircle } from 'react-icons/ai';
+
 import { urlFor } from '@/lib/sanity/utils/sanityImage';
 
 export default function Movies<T extends MoviesCarousels[]>({

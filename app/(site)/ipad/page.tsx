@@ -1,16 +1,19 @@
-import ProductTypes from '@/components/ProductTypes/ProductTypes';
-import ipadtypes from '@/data/ipadtypes.json';
 import Image from 'next/image';
 import Link from 'next/link';
-import IpadHero from '@/components/hero/ipad';
-import { Suspense } from 'react';
-import IpadBanners from '@/components/Banners/Ipads';
-import AppleCard from '@/components/Banners/AppleCard';
-import IPadEssentials from '@/components/Banners/IPadEssentials';
-import IpadAccessoris from '@/components/Banners/IpadAccessoris';
-import WhatMakesIpad from '@/components/Banners/WhatMakesIpad';
-import Ipadfeatures from '@/components/Banners/Ipadfeatures';
-import Features from '@/components/Banners/Features';
+
+import ipadtypes from '@/data/ipadtypes.json';
+import {
+	Features,
+	IpadHero,
+	AppleCard,
+	IpadBanners,
+	Ipadfeatures,
+	ProductTypes,
+	WhatMakesIpad,
+	IPadEssentials,
+	IpadAccessoris,
+} from '@/components/index';
+
 export default function IpadPage() {
 	return (
 		<div className='pt-10 bg-[#f5f5f7] w-full h-full '>
@@ -18,13 +21,9 @@ export default function IpadPage() {
 				<ProductTypes productTypes={ipadtypes} />
 			</section>
 			<div className='bg-black w-full h-full'>
-				<Suspense>
-					<IpadHero />
-				</Suspense>
+				<IpadHero />
 			</div>
-			<Suspense>
-				<IpadBanners />
-			</Suspense>
+			<IpadBanners />
 			<section className='w-full bg-white grid place-items-center m-5'>
 				<div className='text-black grid grid-cols-1 my-5 lg:grid-cols-2 place-items-center p-5 max-w-6xl justify-between'>
 					<div className='flex flex-col items-center justify-center p-5 max-w-xl'>

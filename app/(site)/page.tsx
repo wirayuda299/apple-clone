@@ -1,24 +1,14 @@
-import MovieCarousel from '@/components/carousel/Movies/movies';
-import Heros from '@/components/hero/index';
-import Promo from '@/components/promo';
-import { sanityClient } from '@/config/sanity';
-import { Suspense } from 'react';
+import { getMovies } from '@/lib/sanity/actions/index';
+import { Hero, MovieCarousel, Promo } from '@/components/index';
 
 export default async function Home() {
-	const response = (await sanityClient.fetch(
-		`*[_type == "carousels" ]`
-	)) as MoviesCarousels[];
+	const movies = await getMovies();
+
 	return (
 		<section className='w-full h-full overflow-y-auto'>
-			<Suspense>
-				<Heros />
-			</Suspense>
-			<Suspense>
-				<Promo />
-			</Suspense>
-			<Suspense>
-				<MovieCarousel movies={response} />
-			</Suspense>
+			<Hero />
+			<Promo />
+			<MovieCarousel movies={movies} />
 		</section>
 	);
 }
