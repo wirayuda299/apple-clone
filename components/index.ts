@@ -1,7 +1,7 @@
 export { default as Hero } from '@/components/hero/index';
 export { default as Promo } from '@/components/promo/index';
 export { default as Header } from '@/components/header';
-export { default as Navigation } from '@/components/Navigation';
+export { default as Navigation } from '@/components/Navigation/index';
 export { default as AirPodsMax } from '@/components/Banners/AirPodsMax';
 export { default as AirPodsPro } from '@/components/hero/AirPodsPro/AirPodsPro';
 export { default as IpadBanners } from '@/components/Banners/Ipads';
