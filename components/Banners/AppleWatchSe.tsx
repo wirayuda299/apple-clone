@@ -4,7 +4,7 @@ export default function AppleWatchSe() {
 	return (
 		<section className='bg-[#f5f5f7] grid place-content-center w-full'>
 			<div className='w-full h-full grid grid-cols-1 justify-center items-center mx-auto md:grid-cols-2'>
-				<picture className='order-[0] md:order-[1]'>
+				<picture className='order-0 md:order-1'>
 					<source
 						media='(max-width:734px )'
 						srcSet='/assets/images/banner/apple_watch_se_small.jpg'

@@ -1,32 +1,38 @@
 {
-	"name": "apple",
-	"version": "0.1.0",
-	"private": true,
-	"scripts": {
-		"dev": "next dev ",
-		"build": "next build",
-		"start": "next start",
-		"lint": "next lint"
-	},
-	"dependencies": {
-		"@sanity/image-url": "^1.0.2",
-		"@types/node": "20.4.1",
-		"@types/react": "18.2.15",
-		"@types/react-dom": "18.2.7",
-		"next": "13.5.2",
-		"next-sanity": "^5.5.4",
-		"react": "18.2.0",
-		"react-dom": "18.2.0",
-		"react-icons": "^4.11.0",
-		"recoil": "^0.7.7",
-		"sanity": "^3.16.7",
-		"sharp": "^0.32.6",
-		"swiper": "^9.4.1",
-		"typescript": "5.1.6"
-	},
-	"devDependencies": {
-		"autoprefixer": "^10.4.16",
-		"postcss": "^8.4.30",
-		"tailwindcss": "^3.3.3"
-	}
+  "name": "apple",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbopack ",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@sanity/image-url": "^1.1.0",
+    "@sanity/vision": "3",
+    "@types/node": "20.4.1",
+    "@types/react": "19.0.12",
+    "@types/react-dom": "19.0.4",
+    "next": "15.2.4",
+    "next-sanity": "^9.9.6",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "react-icons": "^4.12.0",
+    "sanity": "^3.81.0",
+    "styled-components": "6",
+    "swiper": "^9.4.1",
+    "typescript": "5.1.6"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.0.17",
+    "postcss": "^8.5.3",
+    "tailwindcss": "^4.0.17"
+  },
+  "pnpm": {
+    "overrides": {
+      "@types/react": "19.0.12",
+      "@types/react-dom": "19.0.4"
+    }
+  }
 }

@@ -12,7 +12,7 @@ export default function Title() {
 					Bertenaga super berkat
 				</p>
 				<div className='relative'>
-					<div className='bg-gradient-to-br via-[#a42e39] from-[#b49130] blur-[3px] to-[#5c068b] w-12 h-12 rounded'></div>
+					<div className='bg-linear-to-br via-[#a42e39] from-[#b49130] blur-[3px] to-[#5c068b] w-12 h-12 rounded-sm'></div>
 					<Image
 						className='w-14 h-14 object-cover absolute -top-1'
 						width={100}

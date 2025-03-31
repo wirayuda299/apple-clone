@@ -4,7 +4,7 @@ export default function AppleWatchS8() {
 	return (
 		<section className='bg-black grid place-content-center w-full '>
 			<div className='w-full h-full grid grid-cols-1 justify-center items-center mx-auto md:grid-cols-2'>
-				<picture className='order-1 md:order-[0]'>
+				<picture className='order-1 md:order-0'>
 					<source
 						media='(max-width:734px )'
 						srcSet='/assets/images/banner/apple_watch_s8_small.jpg'

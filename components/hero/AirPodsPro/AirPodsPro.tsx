@@ -18,7 +18,7 @@ export default function AirPodsPro() {
 				src='/assets/videos/large.mp4'
 			/>
 			<video
-				className=' block sm:hidden !w-full h-full'
+				className=' block sm:hidden w-full! h-full'
 				autoPlay
 				preload='auto'
 				loop

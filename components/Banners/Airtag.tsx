@@ -6,7 +6,7 @@ export default function Airtag() {
 		<section className='w-full max-w-7xl mx-auto bg-white m-4 text-black h-full'>
 			<div className='container mx-auto'>
 				<div className='grid grid-cols-1 md:grid-cols-2 items-center'>
-					<picture className='order-1 md:order-[0]'>
+					<picture className='order-1 md:order-0'>
 						<source
 							srcSet='/assets/images/apple/aksesoris/airtag_small.jpg'
 							media='(max-width:734px)'
